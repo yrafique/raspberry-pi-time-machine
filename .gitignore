@@ -1,0 +1,5 @@
+# Your own settings and notes stay local
+config.env
+private/
+.DS_Store
+docs/Screenshot*

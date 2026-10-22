@@ -1,0 +1,17 @@
+# Packages needed to turn a Raspberry Pi into a Time Machine server.
+# Installed by scripts/01-install-packages.sh (Debian 13 "trixie" / Raspberry Pi OS).
+# One package per line; text after '#' is ignored.
+
+# --- Required: the server itself ---
+samba               # SMB file sharing with Apple extensions (vfs_fruit). Needs >= 4.22.6 for macOS 26.
+avahi-daemon        # Bonjour: lets Macs find the share automatically
+parted              # partitioning the disk
+e2fsprogs           # mkfs.ext4 (usually preinstalled)
+
+# --- Recommended: health and checking ---
+smartmontools       # SMART disk health monitoring (smartctl, smartd)
+smbclient           # lists shares and tests logins from the Pi itself
+libxml2-utils       # xmllint, validates the Avahi service file
+
+# --- Diagnostics (optional) ---
+tcpdump             # check whether a Mac's traffic reaches the Pi at all
