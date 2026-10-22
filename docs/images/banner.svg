@@ -1,90 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-labelledby="t d">
-  <title id="t">Time Machine on a Raspberry Pi</title>
-  <desc id="d">A Raspberry Pi connected to a USB hard drive, backing up two MacBooks over the network.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Time Machine on a Raspberry Pi</title>
+  <desc id="dsc">A Raspberry Pi connected to a USB hard drive, backing up two MacBooks over the network.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1220"/>
-      <stop offset="1" stop-color="#0f3d3a"/>
-    </linearGradient>
-    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset="1" stop-color="#2563eb"/>
-    </linearGradient>
-    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#22c55e"/>
-      <stop offset="1" stop-color="#15803d"/>
-    </linearGradient>
-    <linearGradient id="disk" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#cbd5e1"/>
-      <stop offset="1" stop-color="#64748b"/>
-    </linearGradient>
-    <g id="mac">
-      <rect x="0" y="0" width="170" height="108" rx="10" fill="#e2e8f0"/>
-      <rect x="8" y="8" width="154" height="92" rx="5" fill="url(#screen)"/>
-      <circle cx="85" cy="54" r="26" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.95"/>
-      <path d="M85 38 V54 L97 62" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M62 40 L56 30 L68 31 Z" fill="#ffffff"/>
-      <rect x="-14" y="108" width="198" height="11" rx="5.5" fill="#cbd5e1"/>
-    </g>
+    <linearGradient id="g-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FB3FF"/><stop offset="1" stop-color="#0A6CFF"/></linearGradient>
+    <radialGradient id="r-blue" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0A6CFF" stop-opacity="0.55"/><stop offset="1" stop-color="#0A6CFF" stop-opacity="0"/></radialGradient>
+    <marker id="a-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#4FB3FF" stroke="#4FB3FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CE0FF"/><stop offset="1" stop-color="#1FA6E0"/></linearGradient>
+    <radialGradient id="r-teal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA6E0" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA6E0" stop-opacity="0"/></radialGradient>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#7CE0FF" stroke="#7CE0FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE584"/><stop offset="1" stop-color="#1FA54A"/></linearGradient>
+    <radialGradient id="r-green" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA54A" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA54A" stop-opacity="0"/></radialGradient>
+    <marker id="a-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#5BE584" stroke="#5BE584" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="1" stop-color="#FF8A00"/></linearGradient>
+    <radialGradient id="r-orange" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FF8A00" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A00" stop-opacity="0"/></radialGradient>
+    <marker id="a-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FFC24B" stroke="#FFC24B" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A70"/><stop offset="1" stop-color="#E0281F"/></linearGradient>
+    <radialGradient id="r-red" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E0281F" stop-opacity="0.55"/><stop offset="1" stop-color="#E0281F" stop-opacity="0"/></radialGradient>
+    <marker id="a-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF7A70" stroke="#FF7A70" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-purple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D58BFF"/><stop offset="1" stop-color="#8F3FD0"/></linearGradient>
+    <radialGradient id="r-purple" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8F3FD0" stop-opacity="0.55"/><stop offset="1" stop-color="#8F3FD0" stop-opacity="0"/></radialGradient>
+    <marker id="a-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#D58BFF" stroke="#D58BFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-pink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB8"/><stop offset="1" stop-color="#E03A7C"/></linearGradient>
+    <radialGradient id="r-pink" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E03A7C" stop-opacity="0.55"/><stop offset="1" stop-color="#E03A7C" stop-opacity="0"/></radialGradient>
+    <marker id="a-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF8FB8" stroke="#FF8FB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-gray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9ADB8"/><stop offset="1" stop-color="#5F6572"/></linearGradient>
+    <radialGradient id="r-gray" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#5F6572" stop-opacity="0.55"/><stop offset="1" stop-color="#5F6572" stop-opacity="0"/></radialGradient>
+    <marker id="a-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#A9ADB8" stroke="#A9ADB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-indigo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B8CFF"/><stop offset="1" stop-color="#4B4DE0"/></linearGradient>
+    <radialGradient id="r-indigo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4B4DE0" stop-opacity="0.55"/><stop offset="1" stop-color="#4B4DE0" stop-opacity="0"/></radialGradient>
+    <marker id="a-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#8B8CFF" stroke="#8B8CFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0E1B"/><stop offset="1" stop-color="#131A30"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.11"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.045"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+    <linearGradient id="tilehl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="tileshadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="panel"><rect width="1280" height="440" rx="36"/></clipPath>
+    <style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Helvetica,Arial,sans-serif; }
+    .t  { font-size: 25px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.012em; }
+    .tl { font-size: 21px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.008em; }
+    .s  { font-size: 18px; font-weight: 450; fill: #A7ADBB; letter-spacing: 0.002em; }
+    .eyebrow { font-size: 15px; font-weight: 650; letter-spacing: 0.14em; text-transform: uppercase; }
+    .h1 { font-size: 40px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.028em; }
+    .big { font-size: 46px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.03em; }
+    .m  { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; font-weight: 500; fill: #A7ADBB; }
+    .flow { stroke-dasharray: 2 13; stroke-linecap: round; animation: flow 1.3s linear infinite; }
+    .flowr { stroke-dasharray: 2 13; stroke-linecap: round; animation: flowr 1.3s linear infinite; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -15; } }
+    @keyframes flowr { to { stroke-dashoffset: 15; } }
+    @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .flow,.flowr,.pulse,.float { animation: none; } }
+</style>
   </defs>
-
-  <rect width="1280" height="420" fill="url(#bg)"/>
-  <circle cx="1180" cy="-20" r="220" fill="#14b8a6" opacity="0.08"/>
-  <circle cx="60" cy="440" r="200" fill="#38bdf8" opacity="0.07"/>
-
-  <!-- Title block -->
-  <text x="70" y="150" fill="#5eead4" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3">BACKUP SERVER GUIDE</text>
-  <text x="70" y="218" fill="#ffffff" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="800">Time Machine</text>
-  <text x="70" y="286" fill="#ffffff" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="800">on a Raspberry Pi</text>
-  <text x="70" y="334" fill="#cbd5e1" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="25">Give a spare USB drive a second life as a backup server.</text>
-
-  <!-- Tags -->
-  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600">
-    <rect x="70" y="360" width="104" height="34" rx="17" fill="#134e4a" stroke="#2dd4bf"/>
-    <text x="122" y="383" fill="#99f6e4" text-anchor="middle">Samba</text>
-    <rect x="186" y="360" width="104" height="34" rx="17" fill="#134e4a" stroke="#2dd4bf"/>
-    <text x="238" y="383" fill="#99f6e4" text-anchor="middle">Avahi</text>
-    <rect x="302" y="360" width="104" height="34" rx="17" fill="#134e4a" stroke="#2dd4bf"/>
-    <text x="354" y="383" fill="#99f6e4" text-anchor="middle">ext4</text>
-    <rect x="418" y="360" width="124" height="34" rx="17" fill="#134e4a" stroke="#2dd4bf"/>
-    <text x="480" y="383" fill="#99f6e4" text-anchor="middle">macOS 26</text>
+  <g clip-path="url(#panel)">
+    <rect width="1280" height="440" fill="url(#bg)"/>
+    <circle cx="154" cy="0" r="704" fill="url(#r-teal)" opacity="0.5"/><circle cx="1178" cy="440" r="704" fill="url(#r-indigo)" opacity="0.5"/><circle cx="704" cy="220" r="704" fill="url(#r-green)" opacity="0.5"/>
+    <g opacity="0.5"><rect width="1280" height="440" fill="none"/></g>
   </g>
-
-  <!-- Illustration: two Macs -->
-  <use href="#mac" x="800" y="48"/>
-  <use href="#mac" x="1040" y="48"/>
-
-  <!-- Links Mac -> Pi -->
-  <g fill="none" stroke="#5eead4" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round">
-    <path d="M885 182 C885 225 960 215 985 250"/>
-    <path d="M1125 182 C1125 225 1050 215 1025 250"/>
-  </g>
-  <g fill="#5eead4">
-    <circle cx="885" cy="190" r="5"/>
-    <circle cx="1125" cy="190" r="5"/>
-  </g>
-
-  <!-- Raspberry Pi board -->
-  <g>
-    <rect x="900" y="252" width="210" height="122" rx="12" fill="url(#board)" stroke="#86efac" stroke-width="2"/>
-    <rect x="922" y="274" width="54" height="54" rx="5" fill="#0f172a" opacity="0.85"/>
-    <rect x="990" y="274" width="36" height="22" rx="4" fill="#cbd5e1"/>
-    <rect x="990" y="304" width="36" height="22" rx="4" fill="#cbd5e1"/>
-    <rect x="1050" y="268" width="54" height="30" rx="4" fill="#94a3b8"/>
-    <rect x="1050" y="306" width="54" height="30" rx="4" fill="#3b82f6"/>
-    <circle cx="912" cy="262" r="4" fill="#064e3b"/>
-    <circle cx="1098" cy="362" r="4" fill="#064e3b"/>
-    <circle cx="912" cy="362" r="4" fill="#064e3b"/>
-    <text x="1005" y="360" fill="#ecfdf5" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Raspberry Pi</text>
-  </g>
-
-  <!-- USB link and disk -->
-  <path d="M1104 321 H1150" stroke="#60a5fa" stroke-width="6" stroke-linecap="round"/>
-  <g>
-    <rect x="1150" y="276" width="96" height="92" rx="12" fill="url(#disk)" stroke="#e2e8f0" stroke-width="2"/>
-    <circle cx="1198" cy="316" r="24" fill="#334155"/>
-    <circle cx="1198" cy="316" r="8" fill="#94a3b8"/>
-    <path d="M1198 316 L1214 302" stroke="#e2e8f0" stroke-width="3" stroke-linecap="round"/>
-    <text x="1198" y="360" fill="#0f172a" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="800" text-anchor="middle">2 TB</text>
-  </g>
+  <g opacity="0.07" stroke="#fff" stroke-width="1"><path d="M0 0V440"/><path d="M64 0V440"/><path d="M128 0V440"/><path d="M192 0V440"/><path d="M256 0V440"/><path d="M320 0V440"/><path d="M384 0V440"/><path d="M448 0V440"/><path d="M512 0V440"/><path d="M576 0V440"/><path d="M640 0V440"/><path d="M704 0V440"/><path d="M768 0V440"/><path d="M832 0V440"/><path d="M896 0V440"/><path d="M960 0V440"/><path d="M1024 0V440"/><path d="M1088 0V440"/><path d="M1152 0V440"/><path d="M1216 0V440"/><path d="M1280 0V440"/><path d="M0 0H1280"/><path d="M0 64H1280"/><path d="M0 128H1280"/><path d="M0 192H1280"/><path d="M0 256H1280"/><path d="M0 320H1280"/><path d="M0 384H1280"/></g>
+<text x="84" y="132" class="eyebrow" text-anchor="start" fill="#7CE0FF">Backup server guide</text>
+<text x="80" y="214" style="font-size:78px;font-weight:760;letter-spacing:-0.035em" fill="#F5F5F7">Time Machine</text>
+<text x="80" y="296" style="font-size:78px;font-weight:760;letter-spacing:-0.035em" fill="url(#ttlgrad)">on a Raspberry Pi</text>
+<defs><linearGradient id="ttlgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7CE0FF"/><stop offset="0.55" stop-color="#8B8CFF"/><stop offset="1" stop-color="#D58BFF"/></linearGradient></defs>
+<text x="84" y="346" style="font-size:26px;font-weight:450;letter-spacing:-0.005em" fill="#A7ADBB">Give a spare USB drive a second life as a backup server.</text>
+<rect x="84.0" y="376.5" width="87.0" height="31" rx="15.5" fill="#7CE0FF" fill-opacity="0.16" stroke="#7CE0FF" stroke-opacity="0.55"/>
+<text x="127.5" y="398.1" text-anchor="middle" style="font-size:17px;font-weight:650;letter-spacing:0.01em" fill="#7CE0FF">Samba</text>
+<rect x="183.0" y="376.5" width="87.0" height="31" rx="15.5" fill="#D58BFF" fill-opacity="0.16" stroke="#D58BFF" stroke-opacity="0.55"/>
+<text x="226.5" y="398.1" text-anchor="middle" style="font-size:17px;font-weight:650;letter-spacing:0.01em" fill="#D58BFF">Avahi</text>
+<rect x="282.0" y="376.5" width="76.8" height="31" rx="15.5" fill="#FFC24B" fill-opacity="0.16" stroke="#FFC24B" stroke-opacity="0.55"/>
+<text x="320.4" y="398.1" text-anchor="middle" style="font-size:17px;font-weight:650;letter-spacing:0.01em" fill="#FFC24B">ext4</text>
+<rect x="370.8" y="376.5" width="117.6" height="31" rx="15.5" fill="#5BE584" fill-opacity="0.16" stroke="#5BE584" stroke-opacity="0.55"/>
+<text x="429.6" y="398.1" text-anchor="middle" style="font-size:17px;font-weight:650;letter-spacing:0.01em" fill="#5BE584">macOS 26</text>
+<g filter="url(#shadow)"><rect x="805.0" y="60.0" width="190.0" height="120.0" rx="12.0" fill="#C9CEDA"/></g>
+<rect x="812.0" y="67.0" width="176.0" height="106.0" rx="7.0" fill="#070B16"/>
+<circle cx="900" cy="120" r="46.0" fill="url(#r-blue)" opacity="0.9"/>
+<circle cx="900" cy="120" r="22.0" fill="none" stroke="url(#g-teal)" stroke-width="4.5"/>
+<path d="M900 107.9 V120.0 L909.9 126.6" fill="none" stroke="#fff" stroke-width="4.0" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M871.0 116.0 l7.0 9.0 l7.0 -9.0" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+<rect x="791.0" y="179.0" width="218.0" height="10.0" rx="5.0" fill="#AEB4C2"/>
+<rect x="878.0" y="179.0" width="44.0" height="4.0" rx="2.0" fill="#8C93A3"/>
+<g filter="url(#shadow)"><rect x="1035.0" y="60.0" width="190.0" height="120.0" rx="12.0" fill="#C9CEDA"/></g>
+<rect x="1042.0" y="67.0" width="176.0" height="106.0" rx="7.0" fill="#070B16"/>
+<circle cx="1130" cy="120" r="46.0" fill="url(#r-purple)" opacity="0.9"/>
+<circle cx="1130" cy="120" r="22.0" fill="none" stroke="url(#g-teal)" stroke-width="4.5"/>
+<path d="M1130 107.9 V120.0 L1139.9 126.6" fill="none" stroke="#fff" stroke-width="4.0" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1101.0 116.0 l7.0 9.0 l7.0 -9.0" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+<rect x="1021.0" y="179.0" width="218.0" height="10.0" rx="5.0" fill="#AEB4C2"/>
+<rect x="1108.0" y="179.0" width="44.0" height="4.0" rx="2.0" fill="#8C93A3"/>
+<g filter="url(#shadow)"><rect x="880" y="272" width="250" height="130" rx="16" fill="url(#g-green)"/></g>
+<rect x="880" y="272" width="250" height="130" rx="16" fill="url(#tilehl)" opacity="0.7"/>
+<rect x="880.5" y="272.5" width="249" height="129" rx="16" fill="none" stroke="#fff" stroke-opacity="0.35"/>
+<rect x="904" y="300" width="66" height="66" rx="8" fill="#0A1020"/>
+<text x="937" y="340" text-anchor="middle" style="font-size:13px;font-weight:700;letter-spacing:0.08em" fill="#7CE0FF">BCM</text>
+<rect x="988" y="294" width="44" height="22" rx="4" fill="#E5E9F0" opacity="0.92"/>
+<rect x="988" y="324" width="44" height="22" rx="4" fill="#E5E9F0" opacity="0.92"/>
+<rect x="988" y="354" width="44" height="22" rx="4" fill="#E5E9F0" opacity="0.92"/>
+<rect x="1048" y="294" width="62" height="34" rx="5" fill="#9AA3B5"/>
+<rect x="1048" y="338" width="62" height="34" rx="5" fill="#2F7BFF"/>
+<circle class="pulse" cx="906" cy="384" r="4.5" fill="#FFD60A"/>
+<text x="1110" y="388" text-anchor="end" style="font-size:14px;font-weight:700;letter-spacing:0.02em" fill="#06310F">Raspberry Pi 4</text>
+<g filter="url(#shadow)"><rect x="1138" y="310" width="116" height="100" rx="16" fill="#C2C8D4"/></g>
+<rect x="1138" y="310" width="116" height="100" rx="16" fill="url(#tilehl)" opacity="0.8"/>
+<circle cx="1196" cy="354" r="30" fill="#1B2233"/>
+<circle cx="1196" cy="354" r="9" fill="#8E96AA"/>
+<path d="M1196 354 L1220 334" stroke="#E6E9F0" stroke-width="4" stroke-linecap="round"/>
+<text x="1196" y="400" text-anchor="middle" style="font-size:14px;font-weight:800" fill="#2B3246">2 TB</text>
+<path d="M900,190 C900,230.0 960,230.0 960,270" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M900,190 C900,230.0 960,230.0 960,270" fill="none" stroke="#7CE0FF" stroke-width="3.2" class="flow"/>
+<path d="M1130,190 C1130,230.0 1050,230.0 1050,270" fill="none" stroke="#D58BFF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-purple)"/>
+<path d="M1130,190 C1130,230.0 1050,230.0 1050,270" fill="none" stroke="#D58BFF" stroke-width="3.2" class="flow"/>
+<path d="M1130,340 L1138,340" fill="none" stroke="#4FB3FF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M1130 337 H1138" stroke="#2F7BFF" stroke-width="6" stroke-linecap="round"/>
+  <rect x="0.5" y="0.5" width="1279" height="439" rx="36" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
 </svg>

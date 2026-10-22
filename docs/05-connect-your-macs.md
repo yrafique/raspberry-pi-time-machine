@@ -2,29 +2,7 @@
 
 # 💻 5. Connect your Macs
 
-```mermaid
-flowchart LR
-    subgraph s1["1️⃣ Set up · a few minutes"]
-        direction TB
-        a1["Open Time Machine<br/>settings"] --> a2["Pick the share"] --> a3["Sign in with that<br/>share's login"] --> a4["Choose<br/>encryption"]
-    end
-    subgraph s2["2️⃣ First backup · hours"]
-        direction TB
-        b1["The Mac prepares<br/>the backup"] --> b2["Copies everything<br/>to the Pi"]
-    end
-    subgraph s3["3️⃣ Every day · minutes"]
-        direction TB
-        c1["Hourly incremental<br/>backups"] --> c2["Restore a file<br/>when you need it"]
-    end
-    s1 --> s2 --> s3
-
-    classDef a fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    classDef b fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef c fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class a1,a2,a3,a4 a
-    class b1,b2 b
-    class c1,c2 c
-```
+<p align="center"><img src="images/journey.svg" alt="Connecting a Mac in three phases: set up in a few minutes, the first backup which takes hours, and hourly backups every day." width="100%"></p>
 
 ## ➕ 5.1 Add the backup disk
 
@@ -46,20 +24,7 @@ The Mac starts the first backup right away.
 
 Time Machine only lists shares that Bonjour announces. Try connecting directly first:
 
-```mermaid
-flowchart TD
-    a["Share missing in<br/>Time Machine's list"] --> b["Finder → Go → Connect to Server<br/>smb://pi-address/TimeMachine-Personal"]
-    b --> c{"Does it connect<br/>and ask for a login?"}
-    c -- "yes" --> d["✅ The share is fine.<br/>Only Bonjour is the problem:<br/>sudo systemctl restart avahi-daemon"]
-    c -- "no" --> e["🩺 Go to chapter 8,<br/>Troubleshooting"]
-
-    classDef ok fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef bad fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef n fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    class d ok
-    class e bad
-    class a,b,c n
-```
+<p align="center"><img src="images/share_missing.svg" alt="If the share is missing from the list, connect by hand with Finder. If that works, only Bonjour is the problem and Avahi needs a restart. If not, see troubleshooting." width="100%"></p>
 
 You can also add the disk from Terminal:
 
@@ -108,19 +73,7 @@ This is what a working setup looks like in System Settings → General → Time 
 
 ## ♻️ 5.4 Restoring files
 
-```mermaid
-flowchart TD
-    q{"What do you need<br/>to get back?"}
-    q -->|"one file or folder"| one["📄 Open the folder in Finder<br/>⏰ menu bar → Browse Time Machine Backups<br/>pick a date, click Restore"]
-    q -->|"a whole Mac<br/>(new or wiped)"| whole{"Is macOS still<br/>installed?"}
-    whole -->|"yes, new Mac"| ma["🧳 Setup Assistant →<br/>Transfer from Time Machine backup"]
-    whole -->|"no, wiped"| rec["🛟 Boot into macOS Recovery →<br/>Restore from Time Machine"]
-
-    classDef n fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    classDef ok fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class q,whole n
-    class one,ma,rec ok
-```
+<p align="center"><img src="images/restore.svg" alt="Getting things back: one file via the Time Machine menu bar, a new Mac via Setup Assistant, or a wiped Mac via macOS Recovery." width="100%"></p>
 
 - **A single file or folder:** open the folder in Finder, click the Time Machine icon in the menu bar, and choose **Browse Time Machine Backups**.
 - **A new Mac:** in Setup Assistant choose **Transfer Information to This Mac → From a Mac, Time Machine backup, or Startup disk**, then pick the network backup.

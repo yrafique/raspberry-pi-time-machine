@@ -8,28 +8,7 @@ A backup server has to come back by itself after a power cut. This chapter cover
 
 ## 🥾 6.1 What must happen at boot
 
-```mermaid
-flowchart TD
-    power(["⚡ Power on"]) --> kernel["🐧 Linux starts"]
-    kernel --> usb["🔌 USB disk appears<br/>(waits up to 30 s)"]
-    usb --> mnt{"Mounted at<br/>/srv/timemachine?"}
-    mnt -- "yes" --> smb["🗂️ Samba starts"]
-    mnt -- "no, disk missing" --> nofail["⚠️ Boot carries on anyway<br/>(nofail)"]
-    nofail --> nosmb["🛑 Samba stays stopped<br/>instead of serving an empty folder"]
-    smb --> avahi["🔎 Avahi announces the shares"]
-    avahi --> smart["❤️‍🩹 SMART monitoring starts"]
-    smart --> ready(["✅ Macs can back up"])
-
-    classDef ok fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef warn fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef bad fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef n fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    class power,kernel,usb,smb,avahi,smart n
-    class ready ok
-    class nofail warn
-    class nosmb bad
-    class mnt n
-```
+<p align="center"><img src="images/boot_order.svg" alt="The boot sequence: power on, Linux starts, the disk appears, then a mount check. If mounted, Samba starts, then Avahi and SMART, and Macs can back up. If not, boot carries on but Samba stays stopped." width="100%"></p>
 
 | | What has to happen | Setting that does it |
 |---|---|---|
@@ -66,15 +45,7 @@ sudo systemctl daemon-reload
 
 `RequiresMountsFor` makes Samba start only after `/srv/timemachine` is mounted.
 
-```mermaid
-stateDiagram-v2
-    direction LR
-    [*] --> WaitingForDisk: Pi boots
-    WaitingForDisk --> Running: disk mounted
-    WaitingForDisk --> Stopped: disk missing
-    Stopped --> Running: disk reconnected and mounted
-    Running --> [*]: shutdown
-```
+
 
 > [!NOTE]
 > If the disk fails to mount, Samba stays stopped instead of serving an empty folder. An empty folder would make a Mac think its backup was gone and start a new one.

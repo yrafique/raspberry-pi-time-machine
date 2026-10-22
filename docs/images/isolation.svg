@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">One login per share</title>
+  <desc id="dsc">Mac A's login opens only the TimeMachine-Personal share and its folder. Mac B's login opens only TimeMachine-Work. Each is refused on the other's share.</desc>
+  <defs>
+    <linearGradient id="g-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FB3FF"/><stop offset="1" stop-color="#0A6CFF"/></linearGradient>
+    <radialGradient id="r-blue" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0A6CFF" stop-opacity="0.55"/><stop offset="1" stop-color="#0A6CFF" stop-opacity="0"/></radialGradient>
+    <marker id="a-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#4FB3FF" stroke="#4FB3FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CE0FF"/><stop offset="1" stop-color="#1FA6E0"/></linearGradient>
+    <radialGradient id="r-teal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA6E0" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA6E0" stop-opacity="0"/></radialGradient>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#7CE0FF" stroke="#7CE0FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE584"/><stop offset="1" stop-color="#1FA54A"/></linearGradient>
+    <radialGradient id="r-green" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA54A" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA54A" stop-opacity="0"/></radialGradient>
+    <marker id="a-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#5BE584" stroke="#5BE584" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="1" stop-color="#FF8A00"/></linearGradient>
+    <radialGradient id="r-orange" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FF8A00" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A00" stop-opacity="0"/></radialGradient>
+    <marker id="a-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FFC24B" stroke="#FFC24B" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A70"/><stop offset="1" stop-color="#E0281F"/></linearGradient>
+    <radialGradient id="r-red" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E0281F" stop-opacity="0.55"/><stop offset="1" stop-color="#E0281F" stop-opacity="0"/></radialGradient>
+    <marker id="a-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF7A70" stroke="#FF7A70" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-purple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D58BFF"/><stop offset="1" stop-color="#8F3FD0"/></linearGradient>
+    <radialGradient id="r-purple" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8F3FD0" stop-opacity="0.55"/><stop offset="1" stop-color="#8F3FD0" stop-opacity="0"/></radialGradient>
+    <marker id="a-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#D58BFF" stroke="#D58BFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-pink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB8"/><stop offset="1" stop-color="#E03A7C"/></linearGradient>
+    <radialGradient id="r-pink" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E03A7C" stop-opacity="0.55"/><stop offset="1" stop-color="#E03A7C" stop-opacity="0"/></radialGradient>
+    <marker id="a-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF8FB8" stroke="#FF8FB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-gray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9ADB8"/><stop offset="1" stop-color="#5F6572"/></linearGradient>
+    <radialGradient id="r-gray" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#5F6572" stop-opacity="0.55"/><stop offset="1" stop-color="#5F6572" stop-opacity="0"/></radialGradient>
+    <marker id="a-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#A9ADB8" stroke="#A9ADB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-indigo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B8CFF"/><stop offset="1" stop-color="#4B4DE0"/></linearGradient>
+    <radialGradient id="r-indigo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4B4DE0" stop-opacity="0.55"/><stop offset="1" stop-color="#4B4DE0" stop-opacity="0"/></radialGradient>
+    <marker id="a-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#8B8CFF" stroke="#8B8CFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0E1B"/><stop offset="1" stop-color="#131A30"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.11"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.045"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+    <linearGradient id="tilehl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="tileshadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="panel"><rect width="1200" height="430" rx="34"/></clipPath>
+    <style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Helvetica,Arial,sans-serif; }
+    .t  { font-size: 25px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.012em; }
+    .tl { font-size: 21px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.008em; }
+    .s  { font-size: 18px; font-weight: 450; fill: #A7ADBB; letter-spacing: 0.002em; }
+    .eyebrow { font-size: 15px; font-weight: 650; letter-spacing: 0.14em; text-transform: uppercase; }
+    .h1 { font-size: 40px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.028em; }
+    .big { font-size: 46px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.03em; }
+    .m  { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; font-weight: 500; fill: #A7ADBB; }
+    .flow { stroke-dasharray: 2 13; stroke-linecap: round; animation: flow 1.3s linear infinite; }
+    .flowr { stroke-dasharray: 2 13; stroke-linecap: round; animation: flowr 1.3s linear infinite; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -15; } }
+    @keyframes flowr { to { stroke-dashoffset: 15; } }
+    @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .flow,.flowr,.pulse,.float { animation: none; } }
+</style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="430" fill="url(#bg)"/>
+    <circle cx="144" cy="0" r="660" fill="url(#r-blue)" opacity="0.5"/><circle cx="1104" cy="430" r="660" fill="url(#r-purple)" opacity="0.5"/>
+    <g opacity="0.5"><rect width="1200" height="430" fill="none"/></g>
+  </g>
+  <text x="56" y="60" class="eyebrow" text-anchor="start" fill="#7CE0FF">One login, one share, one private folder</text>
+<rect x="30.0" y="102.0" width="220.0" height="96.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="30.0" y="102.0" width="220.0" height="96.0" rx="22" fill="#4FB3FF" opacity="0.10"/>
+<rect x="30.5" y="102.5" width="219.0" height="95.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="50.0" y="122.0" width="56" height="56" rx="15.1" fill="url(#g-blue)"/></g>
+<rect x="50.0" y="122.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="50.5" y="122.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(64.0,136.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="11" rx="2"/><path d="M2 19.5h20"/></g>
+<text x="124.0" y="144.0" class="tl" text-anchor="start" >Mac</text>
+<text x="124.0" y="170.0" class="s" text-anchor="start" >login: personal</text>
+<rect x="450.0" y="102.0" width="320.0" height="96.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="450.0" y="102.0" width="320.0" height="96.0" rx="22" fill="#4FB3FF" opacity="0.10"/>
+<rect x="450.5" y="102.5" width="319.0" height="95.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="470.0" y="122.0" width="56" height="56" rx="15.1" fill="url(#g-blue)"/></g>
+<rect x="470.0" y="122.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="470.5" y="122.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(484.0,136.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="7" rx="2"/><rect x="3.5" y="13" width="17" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></g>
+<text x="544.0" y="144.0" class="tl" text-anchor="start" >TimeMachine-Personal</text>
+<text x="544.0" y="170.0" class="s" text-anchor="start" >valid users = personal</text>
+<rect x="905.0" y="102.0" width="270.0" height="96.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="905.0" y="102.0" width="270.0" height="96.0" rx="22" fill="#4FB3FF" opacity="0.10"/>
+<rect x="905.5" y="102.5" width="269.0" height="95.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="925.0" y="122.0" width="56" height="56" rx="15.1" fill="url(#g-blue)"/></g>
+<rect x="925.0" y="122.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="925.5" y="122.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(939.0,136.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></g>
+<text x="999.0" y="144.0" class="tl" text-anchor="start" >personal/</text>
+<text x="999.0" y="170.0" class="s" text-anchor="start" >private, mode 700</text>
+<path d="M254,150 L446,150" fill="none" stroke="#5BE584" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-green)"/>
+<path d="M254,150 L446,150" fill="none" stroke="#5BE584" stroke-width="3.2" class="flow"/>
+<rect x="311.6" y="110.0" width="76.9" height="28" rx="14.0" fill="#0C1224" fill-opacity="0.92" stroke="#5BE584" stroke-opacity="0.5"/>
+<text x="350" y="129.0" text-anchor="middle" style="font-size:14px;font-weight:600;letter-spacing:0.005em" fill="#F5F5F7">allowed</text>
+<path d="M776,150 L899,150" fill="none" stroke="#5BE584" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-green)"/>
+<path d="M776,150 L899,150" fill="none" stroke="#5BE584" stroke-width="3.2" class="flow"/>
+<rect x="30.0" y="282.0" width="220.0" height="96.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="30.0" y="282.0" width="220.0" height="96.0" rx="22" fill="#D58BFF" opacity="0.10"/>
+<rect x="30.5" y="282.5" width="219.0" height="95.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="50.0" y="302.0" width="56" height="56" rx="15.1" fill="url(#g-purple)"/></g>
+<rect x="50.0" y="302.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="50.5" y="302.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(64.0,316.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="11" rx="2"/><path d="M2 19.5h20"/></g>
+<text x="124.0" y="324.0" class="tl" text-anchor="start" >Mac</text>
+<text x="124.0" y="350.0" class="s" text-anchor="start" >login: work</text>
+<rect x="450.0" y="282.0" width="320.0" height="96.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="450.0" y="282.0" width="320.0" height="96.0" rx="22" fill="#D58BFF" opacity="0.10"/>
+<rect x="450.5" y="282.5" width="319.0" height="95.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="470.0" y="302.0" width="56" height="56" rx="15.1" fill="url(#g-purple)"/></g>
+<rect x="470.0" y="302.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="470.5" y="302.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(484.0,316.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="7" rx="2"/><rect x="3.5" y="13" width="17" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></g>
+<text x="544.0" y="324.0" class="tl" text-anchor="start" >TimeMachine-Work</text>
+<text x="544.0" y="350.0" class="s" text-anchor="start" >valid users = work</text>
+<rect x="905.0" y="282.0" width="270.0" height="96.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="905.0" y="282.0" width="270.0" height="96.0" rx="22" fill="#D58BFF" opacity="0.10"/>
+<rect x="905.5" y="282.5" width="269.0" height="95.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="925.0" y="302.0" width="56" height="56" rx="15.1" fill="url(#g-purple)"/></g>
+<rect x="925.0" y="302.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="925.5" y="302.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(939.0,316.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></g>
+<text x="999.0" y="324.0" class="tl" text-anchor="start" >work/</text>
+<text x="999.0" y="350.0" class="s" text-anchor="start" >private, mode 700</text>
+<path d="M254,330 L446,330" fill="none" stroke="#5BE584" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-green)"/>
+<path d="M254,330 L446,330" fill="none" stroke="#5BE584" stroke-width="3.2" class="flow"/>
+<rect x="311.6" y="290.0" width="76.9" height="28" rx="14.0" fill="#0C1224" fill-opacity="0.92" stroke="#5BE584" stroke-opacity="0.5"/>
+<text x="350" y="309.0" text-anchor="middle" style="font-size:14px;font-weight:600;letter-spacing:0.005em" fill="#F5F5F7">allowed</text>
+<path d="M776,330 L899,330" fill="none" stroke="#5BE584" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-green)"/>
+<path d="M776,330 L899,330" fill="none" stroke="#5BE584" stroke-width="3.2" class="flow"/>
+<path d="M262,190 L438,290" fill="none" stroke="#FF7A70" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="3 9"/>
+<path d="M262,290 L438,190" fill="none" stroke="#FF7A70" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="3 9"/>
+<rect x="311.6" y="226.0" width="76.9" height="28" rx="14.0" fill="#0C1224" fill-opacity="0.92" stroke="#FF7A70" stroke-opacity="0.5"/>
+<text x="350" y="245.0" text-anchor="middle" style="font-size:14px;font-weight:600;letter-spacing:0.005em" fill="#F5F5F7">refused</text>
+  <rect x="0.5" y="0.5" width="1199" height="429" rx="34" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+</svg>

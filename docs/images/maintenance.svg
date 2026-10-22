@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">A light maintenance routine</title>
+  <desc id="dsc">Whenever you like, run verify.sh. Monthly, install updates and check disk health. Once, test a restore and a reboot. When things change, add or remove a Mac or replace a failing disk.</desc>
+  <defs>
+    <linearGradient id="g-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FB3FF"/><stop offset="1" stop-color="#0A6CFF"/></linearGradient>
+    <radialGradient id="r-blue" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0A6CFF" stop-opacity="0.55"/><stop offset="1" stop-color="#0A6CFF" stop-opacity="0"/></radialGradient>
+    <marker id="a-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#4FB3FF" stroke="#4FB3FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CE0FF"/><stop offset="1" stop-color="#1FA6E0"/></linearGradient>
+    <radialGradient id="r-teal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA6E0" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA6E0" stop-opacity="0"/></radialGradient>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#7CE0FF" stroke="#7CE0FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE584"/><stop offset="1" stop-color="#1FA54A"/></linearGradient>
+    <radialGradient id="r-green" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA54A" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA54A" stop-opacity="0"/></radialGradient>
+    <marker id="a-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#5BE584" stroke="#5BE584" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="1" stop-color="#FF8A00"/></linearGradient>
+    <radialGradient id="r-orange" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FF8A00" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A00" stop-opacity="0"/></radialGradient>
+    <marker id="a-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FFC24B" stroke="#FFC24B" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A70"/><stop offset="1" stop-color="#E0281F"/></linearGradient>
+    <radialGradient id="r-red" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E0281F" stop-opacity="0.55"/><stop offset="1" stop-color="#E0281F" stop-opacity="0"/></radialGradient>
+    <marker id="a-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF7A70" stroke="#FF7A70" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-purple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D58BFF"/><stop offset="1" stop-color="#8F3FD0"/></linearGradient>
+    <radialGradient id="r-purple" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8F3FD0" stop-opacity="0.55"/><stop offset="1" stop-color="#8F3FD0" stop-opacity="0"/></radialGradient>
+    <marker id="a-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#D58BFF" stroke="#D58BFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-pink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB8"/><stop offset="1" stop-color="#E03A7C"/></linearGradient>
+    <radialGradient id="r-pink" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E03A7C" stop-opacity="0.55"/><stop offset="1" stop-color="#E03A7C" stop-opacity="0"/></radialGradient>
+    <marker id="a-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF8FB8" stroke="#FF8FB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-gray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9ADB8"/><stop offset="1" stop-color="#5F6572"/></linearGradient>
+    <radialGradient id="r-gray" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#5F6572" stop-opacity="0.55"/><stop offset="1" stop-color="#5F6572" stop-opacity="0"/></radialGradient>
+    <marker id="a-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#A9ADB8" stroke="#A9ADB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-indigo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B8CFF"/><stop offset="1" stop-color="#4B4DE0"/></linearGradient>
+    <radialGradient id="r-indigo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4B4DE0" stop-opacity="0.55"/><stop offset="1" stop-color="#4B4DE0" stop-opacity="0"/></radialGradient>
+    <marker id="a-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#8B8CFF" stroke="#8B8CFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0E1B"/><stop offset="1" stop-color="#131A30"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.11"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.045"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+    <linearGradient id="tilehl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="tileshadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="panel"><rect width="1200" height="400" rx="34"/></clipPath>
+    <style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Helvetica,Arial,sans-serif; }
+    .t  { font-size: 25px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.012em; }
+    .tl { font-size: 21px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.008em; }
+    .s  { font-size: 18px; font-weight: 450; fill: #A7ADBB; letter-spacing: 0.002em; }
+    .eyebrow { font-size: 15px; font-weight: 650; letter-spacing: 0.14em; text-transform: uppercase; }
+    .h1 { font-size: 40px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.028em; }
+    .big { font-size: 46px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.03em; }
+    .m  { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; font-weight: 500; fill: #A7ADBB; }
+    .flow { stroke-dasharray: 2 13; stroke-linecap: round; animation: flow 1.3s linear infinite; }
+    .flowr { stroke-dasharray: 2 13; stroke-linecap: round; animation: flowr 1.3s linear infinite; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -15; } }
+    @keyframes flowr { to { stroke-dashoffset: 15; } }
+    @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .flow,.flowr,.pulse,.float { animation: none; } }
+</style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="400" fill="url(#bg)"/>
+    <circle cx="144" cy="0" r="660" fill="url(#r-teal)" opacity="0.5"/><circle cx="1104" cy="400" r="660" fill="url(#r-purple)" opacity="0.5"/>
+    <g opacity="0.5"><rect width="1200" height="400" fill="none"/></g>
+  </g>
+  <text x="56" y="56" class="eyebrow" text-anchor="start" fill="#7CE0FF">A light routine</text>
+<rect x="70.0" y="92.0" width="250.0" height="262.0" rx="26" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="70.0" y="92.0" width="250.0" height="262.0" rx="26" fill="#4FB3FF" opacity="0.10"/>
+<rect x="70.5" y="92.5" width="249.0" height="261.0" rx="26" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="168.0" y="119.0" width="54" height="54" rx="14.6" fill="url(#g-blue)"/></g>
+<rect x="168.0" y="119.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="168.5" y="119.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(181.5,132.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></g>
+<text x="195.0" y="220.0" class="tl" text-anchor="middle" >Whenever</text>
+<text x="195.0" y="260.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Run verify.sh</text>
+<text x="195.0" y="288.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Check free space</text>
+<text x="195.0" y="316.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >See who is connected</text>
+<rect x="340.0" y="92.0" width="250.0" height="262.0" rx="26" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="340.0" y="92.0" width="250.0" height="262.0" rx="26" fill="#7CE0FF" opacity="0.10"/>
+<rect x="340.5" y="92.5" width="249.0" height="261.0" rx="26" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="438.0" y="119.0" width="54" height="54" rx="14.6" fill="url(#g-teal)"/></g>
+<rect x="438.0" y="119.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="438.5" y="119.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(451.5,132.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g>
+<text x="465.0" y="220.0" class="tl" text-anchor="middle" >Monthly</text>
+<text x="465.0" y="260.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Install updates</text>
+<text x="465.0" y="288.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Run verify.sh again</text>
+<text x="465.0" y="316.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Check disk health</text>
+<rect x="610.0" y="92.0" width="250.0" height="262.0" rx="26" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="610.0" y="92.0" width="250.0" height="262.0" rx="26" fill="#5BE584" opacity="0.10"/>
+<rect x="610.5" y="92.5" width="249.0" height="261.0" rx="26" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="708.0" y="119.0" width="54" height="54" rx="14.6" fill="url(#g-green)"/></g>
+<rect x="708.0" y="119.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="708.5" y="119.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(721.5,132.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></g>
+<text x="735.0" y="220.0" class="tl" text-anchor="middle" >Once</text>
+<text x="735.0" y="260.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Restore one file</text>
+<text x="735.0" y="288.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Do a reboot test</text>
+<rect x="880.0" y="92.0" width="250.0" height="262.0" rx="26" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="880.0" y="92.0" width="250.0" height="262.0" rx="26" fill="#FFC24B" opacity="0.10"/>
+<rect x="880.5" y="92.5" width="249.0" height="261.0" rx="26" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="978.0" y="119.0" width="54" height="54" rx="14.6" fill="url(#g-orange)"/></g>
+<rect x="978.0" y="119.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="978.5" y="119.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(991.5,132.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 5v6h-6"/></g>
+<text x="1005.0" y="220.0" class="tl" text-anchor="middle" >When things change</text>
+<text x="1005.0" y="260.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >add-mac.sh</text>
+<text x="1005.0" y="288.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >remove-mac.sh</text>
+<text x="1005.0" y="316.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Replace a failing disk</text>
+  <rect x="0.5" y="0.5" width="1199" height="399" rx="34" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+</svg>

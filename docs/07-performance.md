@@ -8,22 +8,7 @@ Three things limit speed: the **disk**, the **Pi's network port**, and your **Ma
 
 Data from the Mac passes through four links. The slowest one sets the speed.
 
-```mermaid
-flowchart LR
-    mac["💻 Mac"] -->|"📶 Wi-Fi<br/>about 15 to 60 MB/s"| router(["📡 Router"])
-    router -->|"🔌 Gigabit Ethernet<br/>about 110 MB/s"| pi["🍓 Pi"]
-    pi -->|"🔗 USB 3.0<br/>about 400 MB/s"| disk[("💾 Disk<br/>about 145 MB/s")]
-
-    classDef slow fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef mid fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef fast fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef n fill:#f1f5f9,stroke:#64748b,color:#1e293b
-    class mac,router,pi n
-    class disk mid
-    linkStyle 0 stroke:#dc2626,stroke-width:4px
-    linkStyle 1 stroke:#d97706,stroke-width:3px
-    linkStyle 2 stroke:#16a34a,stroke-width:2px
-```
+<p align="center"><img src="images/bottleneck.svg" alt="Data passes through Wi-Fi at 15 to 60 MB/s, gigabit Ethernet at about 110 MB/s and USB 3.0 at about 400 MB/s to a disk doing 145 MB/s. The slowest link sets the speed." width="100%"></p>
 
 On Wi-Fi, **the Wi-Fi is the bottleneck**. On Ethernet, the Pi's gigabit port (about 110 MB/s) is just below the disk's speed, so the **network is still the limit, not the disk**.
 
@@ -31,14 +16,7 @@ On Wi-Fi, **the Wi-Fi is the bottleneck**. On Ethernet, the Pi's gigabit port (a
 
 On a Raspberry Pi 4 with a USB 3.0 WD Red 2 TB (5400 RPM) on the blue USB port:
 
-```mermaid
-%%{init: {"xyChart": {"showDataLabel": true}, "themeVariables": {"xyChart": {"plotColorPalette": "#60a5fa, #f59e0b"}}}}%%
-xychart-beta
-    title "Speed in MB/s (higher is faster)"
-    x-axis ["Disk write", "Disk read", "Gigabit best case", "Wi-Fi measured"]
-    y-axis "MB per second" 0 --> 160
-    bar [144, 145, 110, 15]
-```
+<p align="center"><img src="images/speed_chart.svg" alt="Disk write 144 MB/s, disk read 145 MB/s, gigabit Ethernet best case 110 MB/s, and a real backup over Wi-Fi about 15 MB/s." width="100%"></p>
 
 | | Test | Result |
 |---|---|---|
@@ -59,17 +37,9 @@ The disk tests were run with `scripts/benchmark.sh`, which uses `dd` with direct
 
 ## ⏳ 7.3 How long a first backup takes
 
-```mermaid
-%%{init: {"xyChart": {"showDataLabel": true}, "themeVariables": {"xyChart": {"plotColorPalette": "#60a5fa, #f59e0b"}}}}%%
-xychart-beta
-    title "First backup time in hours (lower is better)"
-    x-axis ["100 GB", "500 GB", "1 TB"]
-    y-axis "Hours" 0 --> 20
-    bar [1.9, 9.3, 18.5]
-    line [0.7, 3.5, 7]
-```
+<p align="center"><img src="images/backup_time.svg" alt="First backup time: 1.9 hours at 15 MB/s or 0.7 hours at 40 MB/s for 100 GB; 9.3 or 3.5 hours for 500 GB; 18.5 or 7 hours for 1 TB." width="100%"></p>
 
-The bars are for 15 MB/s (slow Wi-Fi). The line is for 40 MB/s (a good wired connection).
+Orange bars are 15 MB/s (slow Wi-Fi). Green bars are 40 MB/s (a good wired connection).
 
 | Data on the Mac | At 15 MB/s | At 40 MB/s |
 |---|---|---|
@@ -110,23 +80,7 @@ echo "$(( (b-a)/30/1048576 )) MB/s"
 
 ## 🏎️ 7.5 Making it faster
 
-```mermaid
-flowchart TD
-    start{"Backups slower<br/>than you'd like?"} --> w{"Is the Mac on<br/>Wi-Fi?"}
-    w -- "yes" --> eth["🔌 Use Ethernet for the first backup<br/><b>The biggest single improvement</b>"]
-    w -- "no" --> usb{"Does lsusb -t show<br/>5000M for the disk?"}
-    usb -- "no, 480M" --> port["🟦 Move the disk to a blue USB 3.0 port<br/>and use a USB 3.0 cable"]
-    usb -- "yes" --> link{"Does eth0 speed<br/>say 1000?"}
-    link -- "no, 100" --> cable["🔧 Replace the Ethernet cable"]
-    link -- "yes" --> ok["✅ You're at the hardware limit<br/>of a Pi 4 on gigabit"]
-
-    classDef good fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef fix fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef q fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    class eth,port,cable fix
-    class ok good
-    class start,w,usb,link q
-```
+<p align="center"><img src="images/speed_decision.svg" alt="To speed things up: use Ethernet if the Mac is on Wi-Fi, use a blue USB 3.0 port if lsusb shows 480M, replace the cable if eth0 says 100. Otherwise you're at the hardware limit." width="100%"></p>
 
 1. **Use Ethernet on the Mac** for the first backup. It is the biggest single improvement.
 2. **Check the disk is on a USB 3.0 port** with `lsusb -t`. `5000M` is right. `480M` is USB 2.0 and would cap you at about 35 MB/s.

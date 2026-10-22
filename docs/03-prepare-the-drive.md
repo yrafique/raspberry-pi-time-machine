@@ -24,55 +24,11 @@ If the data partition isn't ext4 (for example NTFS or exFAT from a Windows disk)
 
 ## 🔄 3.2 Before and after
 
-```mermaid
-flowchart LR
-    subgraph before["❌ Before: an old NAS disk, 8 partitions"]
-        direction TB
-        b1["sda1 · 1.9 GB<br/>RAID member"]
-        b2["sda2 · 1.9 GB<br/>RAID member"]
-        b3["sda3 · 489 MB<br/>swap"]
-        b4["sda4 · 1.8 TB<br/>ext4 with old data"]
-        b5["sda5 to sda8<br/>small leftovers"]
-    end
-    wipe{{"🧨 wipefs<br/>parted<br/>mkfs.ext4"}}
-    subgraph after["✅ After: one partition"]
-        direction TB
-        a1["sda1 · 1.8 TiB<br/>ext4, label TimeMachine<br/>mounted at /srv/timemachine"]
-    end
-    before --> wipe --> after
-
-    classDef old fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef tool fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef new fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class b1,b2,b3,b4,b5 old
-    class wipe tool
-    class a1 new
-```
+<p align="center"><img src="images/disk_before_after.svg" alt="An old NAS disk with eight partitions is wiped and becomes one ext4 partition labelled TimeMachine that fills the whole disk." width="100%"></p>
 
 ## 🛡️ 3.3 How the script protects you
 
-```mermaid
-flowchart TD
-    start(["▶️ sudo ./scripts/02-prepare-drive.sh"]) --> exists{"Is DISK a<br/>real block device?"}
-    exists -- "no" --> stop1(["⛔ Stop"])
-    exists -- "yes" --> boot{"Is it the disk<br/>the Pi boots from?"}
-    boot -- "yes" --> stop2(["⛔ Refuse. Nothing changed."])
-    boot -- "no" --> show["📋 Show the disk's model,<br/>size and partitions"]
-    show --> type{"Did you type the<br/>device path exactly?"}
-    type -- "no" --> stop3(["⛔ Not confirmed. Nothing changed."])
-    type -- "yes" --> wipe["🧨 Erase, partition, format"]
-    wipe --> mount["📌 Add to fstab, mount"]
-    mount --> done(["✅ Done"])
-
-    classDef stop fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef ok fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef act fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef q fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    class stop1,stop2,stop3 stop
-    class done ok
-    class show,wipe,mount act
-    class exists,boot,type q
-```
+<p align="center"><img src="images/wipe_guard.svg" alt="The erase script checks that the target is a real disk, refuses the boot disk, and makes you type the device path. Any failed check stops it with nothing erased." width="100%"></p>
 
 | Step | Command | Why |
 |---|---|---|

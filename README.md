@@ -21,30 +21,9 @@ This guide was built and tested on a Raspberry Pi 4 with a 2 TB WD Red drive tha
 
 ## ✨ What you end up with
 
-| | |
-|---|---|
-| 🔄 **Automatic backups** | Your Mac backs up every hour, on Wi-Fi or Ethernet, to a drive that sits quietly in a corner. |
-| 👥 **One share per Mac** | Each Mac gets its own login, so a work laptop and a personal laptop can't read each other's backups. |
-| 💾 **The whole disk** | All the space is shared. Each Mac prunes its own old backups, so there are no quotas to manage. |
-| 🛡️ **It survives power cuts** | The server restarts by itself, waits for the disk, and watches the disk's health. |
-| ⏱️ **About an hour of work** | Most of it is waiting for the first backup. |
+<p align="center"><img src="docs/images/features.svg" alt="Five benefits: automatic hourly backups, one private share per Mac, the whole disk shared, it survives power cuts, and about an hour of work." width="100%"></p>
 
-```mermaid
-flowchart LR
-    m1["💻 MacBook<br/>personal"] <-->|"Wi-Fi or Ethernet"| router(["📡 Router"])
-    m2["💻 MacBook<br/>work"] <-->|"Wi-Fi or Ethernet"| router
-    router <-->|"Gigabit Ethernet"| pi["🍓 <b>Raspberry Pi</b><br/>Samba serves the share<br/>Avahi announces it"]
-    pi <-->|"USB 3.0"| disk[("💾 USB disk<br/>2 TB, ext4")]
-
-    classDef mac fill:#dbeafe,stroke:#2563eb,color:#1e293b
-    classDef net fill:#f1f5f9,stroke:#64748b,color:#1e293b
-    classDef svc fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef store fill:#fef3c7,stroke:#d97706,color:#78350f
-    class m1,m2 mac
-    class router net
-    class pi svc
-    class disk store
-```
+<p align="center"><img src="docs/images/architecture.svg" alt="Two MacBooks connect through a router over Wi-Fi or Ethernet. The router links by gigabit Ethernet to a Raspberry Pi running Samba and Avahi. The Pi connects by USB 3.0 to a 2 TB disk that holds a personal folder and a work folder." width="100%"></p>
 
 ## 🧰 What you need
 
@@ -58,20 +37,7 @@ flowchart LR
 
 ## 🗺️ The route
 
-```mermaid
-flowchart LR
-    a["🍓 <b>1. Prepare the Pi</b><br/>flash, SSH,<br/>fixed address"] --> b["💾 <b>2. Prepare the drive</b><br/>erase, format,<br/>mount at boot"]
-    b --> c["⚙️ <b>3. Install the server</b><br/>Samba, Bonjour,<br/>users and shares"]
-    c --> d["💻 <b>4. Connect your Macs</b><br/>add the disk in<br/>Time Machine"]
-    d --> e["🛡️ <b>5. Make it solid</b><br/>boot order,<br/>health, reboot test"]
-
-    classDef step fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    classDef danger fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef done fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class a,c,d step
-    class b danger
-    class e done
-```
+<p align="center"><img src="docs/images/route.svg" alt="The route in five steps: prepare the Pi, prepare the drive (this erases it), install the server, connect your Macs, and make it solid." width="100%"></p>
 
 ## ⚡ The quick version
 
@@ -120,6 +86,7 @@ Read it in order the first time. Each chapter ends with a link to the next.
 │   ├── verify.sh                read-only health check
 │   └── benchmark.sh             measures the drive's raw speed
 ├── config/mac/nsmb.conf         optional Mac-side workaround, see chapter 8
+├── tools/diagrams/              the Python that draws every illustration (python3 build.py)
 └── docs/                        the chapters and their images
 ```
 

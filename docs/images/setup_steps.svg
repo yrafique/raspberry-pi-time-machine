@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 262" width="1200" height="262" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Preparing the Pi in seven steps</title>
+  <desc id="dsc">Flash the SD card, plug in power and Ethernet, SSH in from the Mac, reserve a fixed address, update everything, connect the USB drive, and clone this repository.</desc>
+  <defs>
+    <linearGradient id="g-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FB3FF"/><stop offset="1" stop-color="#0A6CFF"/></linearGradient>
+    <radialGradient id="r-blue" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0A6CFF" stop-opacity="0.55"/><stop offset="1" stop-color="#0A6CFF" stop-opacity="0"/></radialGradient>
+    <marker id="a-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#4FB3FF" stroke="#4FB3FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CE0FF"/><stop offset="1" stop-color="#1FA6E0"/></linearGradient>
+    <radialGradient id="r-teal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA6E0" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA6E0" stop-opacity="0"/></radialGradient>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#7CE0FF" stroke="#7CE0FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE584"/><stop offset="1" stop-color="#1FA54A"/></linearGradient>
+    <radialGradient id="r-green" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA54A" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA54A" stop-opacity="0"/></radialGradient>
+    <marker id="a-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#5BE584" stroke="#5BE584" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="1" stop-color="#FF8A00"/></linearGradient>
+    <radialGradient id="r-orange" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FF8A00" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A00" stop-opacity="0"/></radialGradient>
+    <marker id="a-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FFC24B" stroke="#FFC24B" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A70"/><stop offset="1" stop-color="#E0281F"/></linearGradient>
+    <radialGradient id="r-red" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E0281F" stop-opacity="0.55"/><stop offset="1" stop-color="#E0281F" stop-opacity="0"/></radialGradient>
+    <marker id="a-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF7A70" stroke="#FF7A70" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-purple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D58BFF"/><stop offset="1" stop-color="#8F3FD0"/></linearGradient>
+    <radialGradient id="r-purple" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8F3FD0" stop-opacity="0.55"/><stop offset="1" stop-color="#8F3FD0" stop-opacity="0"/></radialGradient>
+    <marker id="a-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#D58BFF" stroke="#D58BFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-pink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB8"/><stop offset="1" stop-color="#E03A7C"/></linearGradient>
+    <radialGradient id="r-pink" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E03A7C" stop-opacity="0.55"/><stop offset="1" stop-color="#E03A7C" stop-opacity="0"/></radialGradient>
+    <marker id="a-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF8FB8" stroke="#FF8FB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-gray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9ADB8"/><stop offset="1" stop-color="#5F6572"/></linearGradient>
+    <radialGradient id="r-gray" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#5F6572" stop-opacity="0.55"/><stop offset="1" stop-color="#5F6572" stop-opacity="0"/></radialGradient>
+    <marker id="a-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#A9ADB8" stroke="#A9ADB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-indigo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B8CFF"/><stop offset="1" stop-color="#4B4DE0"/></linearGradient>
+    <radialGradient id="r-indigo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4B4DE0" stop-opacity="0.55"/><stop offset="1" stop-color="#4B4DE0" stop-opacity="0"/></radialGradient>
+    <marker id="a-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#8B8CFF" stroke="#8B8CFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0E1B"/><stop offset="1" stop-color="#131A30"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.11"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.045"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+    <linearGradient id="tilehl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="tileshadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="panel"><rect width="1200" height="262" rx="34"/></clipPath>
+    <style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Helvetica,Arial,sans-serif; }
+    .t  { font-size: 25px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.012em; }
+    .tl { font-size: 21px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.008em; }
+    .s  { font-size: 18px; font-weight: 450; fill: #A7ADBB; letter-spacing: 0.002em; }
+    .eyebrow { font-size: 15px; font-weight: 650; letter-spacing: 0.14em; text-transform: uppercase; }
+    .h1 { font-size: 40px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.028em; }
+    .big { font-size: 46px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.03em; }
+    .m  { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; font-weight: 500; fill: #A7ADBB; }
+    .flow { stroke-dasharray: 2 13; stroke-linecap: round; animation: flow 1.3s linear infinite; }
+    .flowr { stroke-dasharray: 2 13; stroke-linecap: round; animation: flowr 1.3s linear infinite; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -15; } }
+    @keyframes flowr { to { stroke-dashoffset: 15; } }
+    @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .flow,.flowr,.pulse,.float { animation: none; } }
+</style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="262" fill="url(#bg)"/>
+    <circle cx="144" cy="0" r="660" fill="url(#r-green)" opacity="0.5"/><circle cx="1104" cy="262" r="660" fill="url(#r-blue)" opacity="0.5"/>
+    <g opacity="0.5"><rect width="1200" height="262" fill="none"/></g>
+  </g>
+  <rect x="39.0" y="36.0" width="138.0" height="190.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="39.0" y="36.0" width="138.0" height="190.0" rx="22" fill="#5BE584" opacity="0.10"/>
+<rect x="39.5" y="36.5" width="137.0" height="189.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<circle cx="61.0" cy="58" r="12" fill="url(#g-green)"/>
+<circle cx="61.0" cy="58" r="11.5" fill="none" stroke="#fff" stroke-opacity="0.3"/>
+<text x="61.0" y="64" text-anchor="middle" style="font-size:12px;font-weight:700" fill="#fff">1</text>
+<g filter="url(#tileshadow)"><rect x="81.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#g-green)"/></g>
+<rect x="81.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="81.5" y="75.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(94.5,88.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7.5L19 7.5V21H7z"/><path d="M10 6v3M12.5 6v3M15 8v1"/></g>
+<text x="108.0" y="170.0" class="tl" text-anchor="middle" >Flash the</text>
+<text x="108.0" y="194.0" class="tl" text-anchor="middle" >SD card</text>
+<path d="M180.0,102 L200.0,102" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M180.0,102 L200.0,102" fill="none" stroke="#7CE0FF" stroke-width="2.6" class="flow"/>
+<rect x="203.0" y="36.0" width="138.0" height="190.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="203.0" y="36.0" width="138.0" height="190.0" rx="22" fill="#FFC24B" opacity="0.10"/>
+<rect x="203.5" y="36.5" width="137.0" height="189.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<circle cx="225.0" cy="58" r="12" fill="url(#g-orange)"/>
+<circle cx="225.0" cy="58" r="11.5" fill="none" stroke="#fff" stroke-opacity="0.3"/>
+<text x="225.0" y="64" text-anchor="middle" style="font-size:12px;font-weight:700" fill="#fff">2</text>
+<g filter="url(#tileshadow)"><rect x="245.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#g-orange)"/></g>
+<rect x="245.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="245.5" y="75.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(258.5,88.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"/></g>
+<text x="272.0" y="170.0" class="tl" text-anchor="middle" >Power and</text>
+<text x="272.0" y="194.0" class="tl" text-anchor="middle" >Ethernet</text>
+<path d="M344.0,102 L364.0,102" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M344.0,102 L364.0,102" fill="none" stroke="#7CE0FF" stroke-width="2.6" class="flow"/>
+<rect x="367.0" y="36.0" width="138.0" height="190.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="367.0" y="36.0" width="138.0" height="190.0" rx="22" fill="#4FB3FF" opacity="0.10"/>
+<rect x="367.5" y="36.5" width="137.0" height="189.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<circle cx="389.0" cy="58" r="12" fill="url(#g-blue)"/>
+<circle cx="389.0" cy="58" r="11.5" fill="none" stroke="#fff" stroke-opacity="0.3"/>
+<text x="389.0" y="64" text-anchor="middle" style="font-size:12px;font-weight:700" fill="#fff">3</text>
+<g filter="url(#tileshadow)"><rect x="409.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#g-blue)"/></g>
+<rect x="409.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="409.5" y="75.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(422.5,88.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="3"/><path d="M7 10l3 2.5-3 2.5M12.5 15.5h4.5"/></g>
+<text x="436.0" y="170.0" class="tl" text-anchor="middle" >SSH in from</text>
+<text x="436.0" y="194.0" class="tl" text-anchor="middle" >the Mac</text>
+<path d="M508.0,102 L528.0,102" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M508.0,102 L528.0,102" fill="none" stroke="#7CE0FF" stroke-width="2.6" class="flow"/>
+<rect x="531.0" y="36.0" width="138.0" height="190.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="531.0" y="36.0" width="138.0" height="190.0" rx="22" fill="#7CE0FF" opacity="0.10"/>
+<rect x="531.5" y="36.5" width="137.0" height="189.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<circle cx="553.0" cy="58" r="12" fill="url(#g-teal)"/>
+<circle cx="553.0" cy="58" r="11.5" fill="none" stroke="#fff" stroke-opacity="0.3"/>
+<text x="553.0" y="64" text-anchor="middle" style="font-size:12px;font-weight:700" fill="#fff">4</text>
+<g filter="url(#tileshadow)"><rect x="573.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#g-teal)"/></g>
+<rect x="573.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="573.5" y="75.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(586.5,88.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></g>
+<text x="600.0" y="170.0" class="tl" text-anchor="middle" >Reserve a</text>
+<text x="600.0" y="194.0" class="tl" text-anchor="middle" >fixed address</text>
+<path d="M672.0,102 L692.0,102" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M672.0,102 L692.0,102" fill="none" stroke="#7CE0FF" stroke-width="2.6" class="flow"/>
+<rect x="695.0" y="36.0" width="138.0" height="190.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="695.0" y="36.0" width="138.0" height="190.0" rx="22" fill="#D58BFF" opacity="0.10"/>
+<rect x="695.5" y="36.5" width="137.0" height="189.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<circle cx="717.0" cy="58" r="12" fill="url(#g-purple)"/>
+<circle cx="717.0" cy="58" r="11.5" fill="none" stroke="#fff" stroke-opacity="0.3"/>
+<text x="717.0" y="64" text-anchor="middle" style="font-size:12px;font-weight:700" fill="#fff">5</text>
+<g filter="url(#tileshadow)"><rect x="737.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#g-purple)"/></g>
+<rect x="737.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="737.5" y="75.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(750.5,88.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 11l4.5 4.5 4.5-4.5M5 20h14"/></g>
+<text x="764.0" y="170.0" class="tl" text-anchor="middle" >Update</text>
+<text x="764.0" y="194.0" class="tl" text-anchor="middle" >everything</text>
+<path d="M836.0,102 L856.0,102" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M836.0,102 L856.0,102" fill="none" stroke="#7CE0FF" stroke-width="2.6" class="flow"/>
+<rect x="859.0" y="36.0" width="138.0" height="190.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="859.0" y="36.0" width="138.0" height="190.0" rx="22" fill="#FF8FB8" opacity="0.10"/>
+<rect x="859.5" y="36.5" width="137.0" height="189.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<circle cx="881.0" cy="58" r="12" fill="url(#g-pink)"/>
+<circle cx="881.0" cy="58" r="11.5" fill="none" stroke="#fff" stroke-opacity="0.3"/>
+<text x="881.0" y="64" text-anchor="middle" style="font-size:12px;font-weight:700" fill="#fff">6</text>
+<g filter="url(#tileshadow)"><rect x="901.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#g-pink)"/></g>
+<rect x="901.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="901.5" y="75.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(914.5,88.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="3.5"/><circle cx="12" cy="10.5" r="3.2"/><path d="M8 17h3"/><circle cx="16.5" cy="17" r=".7" fill="#fff"/></g>
+<text x="928.0" y="170.0" class="tl" text-anchor="middle" >Connect the</text>
+<text x="928.0" y="194.0" class="tl" text-anchor="middle" >USB drive</text>
+<path d="M1000.0,102 L1020.0,102" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M1000.0,102 L1020.0,102" fill="none" stroke="#7CE0FF" stroke-width="2.6" class="flow"/>
+<rect x="1023.0" y="36.0" width="138.0" height="190.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="1023.0" y="36.0" width="138.0" height="190.0" rx="22" fill="#8B8CFF" opacity="0.10"/>
+<rect x="1023.5" y="36.5" width="137.0" height="189.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<circle cx="1045.0" cy="58" r="12" fill="url(#g-indigo)"/>
+<circle cx="1045.0" cy="58" r="11.5" fill="none" stroke="#fff" stroke-opacity="0.3"/>
+<text x="1045.0" y="64" text-anchor="middle" style="font-size:12px;font-weight:700" fill="#fff">7</text>
+<g filter="url(#tileshadow)"><rect x="1065.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#g-indigo)"/></g>
+<rect x="1065.0" y="75.0" width="54" height="54" rx="14.6" fill="url(#tilehl)"/>
+<rect x="1065.5" y="75.5" width="53" height="53" rx="14.6" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(1078.5,88.5) scale(1.125)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></g>
+<text x="1092.0" y="170.0" class="tl" text-anchor="middle" >Clone this</text>
+<text x="1092.0" y="194.0" class="tl" text-anchor="middle" >repository</text>
+  <rect x="0.5" y="0.5" width="1199" height="261" rx="34" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+</svg>

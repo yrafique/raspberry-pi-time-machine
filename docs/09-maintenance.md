@@ -6,22 +6,7 @@ Once it's running, there is very little to do. This chapter is the short list.
 
 ## 📅 What to do, and when
 
-```mermaid
-timeline
-    title A light maintenance routine
-    section Whenever you like
-        Quick look : sudo ./scripts/verify.sh
-    section Monthly
-        Updates : apt full-upgrade between backups : verify.sh again
-        Disk health : smartctl health and the three counters
-    section Once
-        Restore test : Restore one file from Time Machine
-        Reboot test : Prove the Pi comes back by itself
-    section When something changes
-        New Mac : add-mac.sh
-        Retired Mac : remove-mac.sh
-        Disk failing : replace the disk
-```
+<p align="center"><img src="images/maintenance.svg" alt="A light routine: verify whenever you like, updates and health monthly, a restore and reboot test once, and add, remove or replace when things change." width="100%"></p>
 
 ## 🔎 Everyday checks
 
@@ -90,25 +75,7 @@ Time Machine removes a Mac's oldest backups when space runs low, so a full disk 
 
 ## 🔁 Replace the disk
 
-```mermaid
-flowchart TD
-    a["🆕 Connect the new disk<br/>note its name with lsblk"] --> b["📝 Set DISK in config.env"]
-    b --> c["💾 02-prepare-drive.sh"]
-    c --> d["⚙️ 03-configure-shares.sh"]
-    d --> e["🛡️ 04-harden.sh"]
-    e --> f["💻 On each Mac: re-add the backup disk"]
-    f --> g(["🐢 Each Mac starts a fresh first backup"])
-    a -.-> keep["🗄️ Keep the old disk for a while.<br/>It still holds your old backups."]
-
-    classDef step fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    classDef danger fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef ok fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef note fill:#fef3c7,stroke:#d97706,color:#78350f
-    class a,b,d,e,f step
-    class c danger
-    class g ok
-    class keep note
-```
+<p align="center"><img src="images/replace_disk.svg" alt="Replacing the disk: connect the new disk, set DISK, run the prepare, shares and harden scripts, then re-add the disk on each Mac." width="100%"></p>
 
 Your old backups are on the old disk. Keep it for a while, so you can restore from it if the new disk has problems, then recycle it.
 

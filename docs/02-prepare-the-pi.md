@@ -4,12 +4,7 @@
 
 If your Pi already runs Raspberry Pi OS and you can SSH in, skim this chapter for the network advice and move on.
 
-```mermaid
-flowchart LR
-    a["💳 Flash the<br/>SD card"] --> b["🔌 Plug in<br/>power + Ethernet"] --> c["🔑 SSH in<br/>from the Mac"] --> d["📌 Reserve a<br/>fixed address"] --> e["⬆️ Update<br/>everything"] --> f["💾 Connect<br/>the USB drive"] --> g["📥 Clone this<br/>repository"]
-    classDef s fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    class a,b,c,d,e,f,g s
-```
+<p align="center"><img src="images/setup_steps.svg" alt="Seven steps to prepare the Pi: flash the SD card, plug in power and Ethernet, SSH in, reserve a fixed address, update everything, connect the USB drive, and clone this repository." width="100%"></p>
 
 ## 💳 2.1 Install the operating system
 
@@ -78,27 +73,7 @@ mmcblk0     14.7G                      mmc
 > [!WARNING]
 > `mmcblk0` is the Pi's own SD card. **Never** erase that one.
 
-```mermaid
-flowchart LR
-    subgraph pi["🍓 Raspberry Pi 4"]
-        direction TB
-        blue["🟦 Blue USB 3.0 port<br/>5 Gbps, use this one"]
-        black["⬛ Black USB 2.0 port<br/>480 Mbps, too slow"]
-        eth["🌐 Ethernet<br/>1 Gbps"]
-        pwr["⚡ USB-C power<br/>5 V, 3 A"]
-    end
-    disk["💾 USB drive"] ==>|"USB 3.0 cable"| blue
-    router(["📡 Router"]) ==>|"Ethernet cable"| eth
-    psu["🔋 Power supply"] ==> pwr
-    disk -. "slow if plugged here" .-> black
-
-    classDef good fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef bad fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef neutral fill:#f1f5f9,stroke:#64748b,color:#1e293b
-    class blue,eth,pwr good
-    class black bad
-    class disk,router,psu neutral
-```
+<p align="center"><img src="images/ports.svg" alt="A Raspberry Pi 4 with its ports labelled. The USB drive goes in a blue USB 3.0 port. A black USB 2.0 port is about ten times slower. The router goes to Ethernet and the power supply to USB-C." width="100%"></p>
 
 Check that the drive connected at full speed. A USB 3.0 port shows `5000M`:
 

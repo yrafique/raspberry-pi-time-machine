@@ -6,31 +6,7 @@ Time Machine can back up to a disk plugged into your Mac, or to a **network shar
 
 ## 🧩 The big picture
 
-```mermaid
-flowchart LR
-    m1["💻 MacBook<br/>personal"] <-->|"Wi-Fi or Ethernet"| router(["📡 Router"])
-    m2["💻 MacBook<br/>work"] <-->|"Wi-Fi or Ethernet"| router
-    router <-->|"Gigabit Ethernet"| samba
-    subgraph pi["🍓 Raspberry Pi 4"]
-        avahi["🔎 Avahi<br/>Bonjour announcements"]
-        samba["🗂️ Samba<br/>SMB file server"]
-    end
-    samba <-->|"USB 3.0"| fp
-    samba <-->|"USB 3.0"| fw
-    subgraph disk["💾 USB disk, ext4, mounted at /srv/timemachine"]
-        fp["📁 personal/<br/>Mac 1's backups"]
-        fw["📁 work/<br/>Mac 2's backups"]
-    end
-
-    classDef mac fill:#dbeafe,stroke:#2563eb,color:#1e293b
-    classDef net fill:#f1f5f9,stroke:#64748b,color:#1e293b
-    classDef svc fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef store fill:#fef3c7,stroke:#d97706,color:#78350f
-    class m1,m2 mac
-    class router net
-    class avahi,samba svc
-    class fp,fw store
-```
+<p align="center"><img src="images/architecture.svg" alt="Two MacBooks connect through a router over Wi-Fi or Ethernet. The router links by gigabit Ethernet to a Raspberry Pi running Samba and Avahi. The Pi connects by USB 3.0 to a 2 TB disk that holds a personal folder and a work folder." width="100%"></p>
 
 ## 🔧 The three pieces
 
@@ -40,83 +16,20 @@ flowchart LR
 | 🔎 | **Avahi** | Announces the share over Bonjour, so your Mac lists it in Time Machine without you typing an address. | `avahi-daemon` |
 | 💾 | **An ext4 disk** | An ordinary Linux filesystem. Time Machine stores its data in a disk image (a *sparsebundle*), so the disk doesn't need an Apple format. | `parted`, `e2fsprogs` |
 
-```mermaid
-flowchart TB
-    subgraph mac["💻 On the Mac"]
-        tm["⏰ Time Machine"]
-    end
-    subgraph pi["🍓 On the Pi"]
-        direction TB
-        avahi["🔎 Avahi: 'a backup disk is here'"]
-        samba["🗂️ Samba + vfs_fruit: 'here is the share'"]
-        ext4["📀 ext4 filesystem"]
-        usb["🔌 USB 3.0 driver (UAS)"]
-        hdd["💾 The hard drive"]
-        avahi ~~~ samba
-        samba --> ext4 --> usb --> hdd
-    end
-    tm -->|"finds"| avahi
-    tm -->|"backs up to"| samba
 
-    classDef mac fill:#dbeafe,stroke:#2563eb,color:#1e293b
-    classDef svc fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef store fill:#fef3c7,stroke:#d97706,color:#78350f
-    class tm mac
-    class avahi,samba svc
-    class ext4,usb,hdd store
-```
 
 > [!NOTE]
 > **Why SMB and Samba?** Apple removed the older AFP protocol, and Time Machine over SMB is now the supported route for network backups. Samba has supported it since version 4.8, through `fruit:time machine = yes`. Other routes exist, such as a dedicated NAS operating system or a Docker image, but they hide the details. This guide uses plain Samba so that you can see and change every part.
 
 ## 🔁 What happens during a backup
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant Mac as 💻 Mac
-    participant Avahi as 🔎 Avahi (Pi)
-    participant Samba as 🗂️ Samba (Pi)
-    participant Disk as 💾 Disk
-
-    Note over Avahi,Samba: The Pi boots. The disk mounts, then Samba starts.
-    Avahi-->>Mac: Bonjour: "TimeMachine-Personal is a backup disk"
-    Mac->>Mac: You open Time Machine settings and see the share
-    Mac->>Samba: Connect with SMB 3 as user "personal"
-    Samba->>Samba: Check the password and "valid users"
-    Samba-->>Mac: Logged in
-    Mac->>Samba: Create the sparsebundle backup file
-    Samba->>Disk: Write /srv/timemachine/personal/MyMac.sparsebundle
-    loop Every hour while the Mac is awake
-        Mac->>Samba: Send only what changed
-        Samba->>Disk: Write the changes
-    end
-```
+<p align="center"><img src="images/backup_flow.svg" alt="Sequence of a backup: Avahi announces the share, the Mac connects to Samba, Samba checks the password and logs it in, the Mac creates the backup file, Samba writes it to the disk, then every hour only changes are sent." width="100%"></p>
 
 ## 👥 Why one share per Mac?
 
 Each Mac creates its own backup file inside the share, so two Macs could safely share one folder. A separate share and login for each Mac gives you three things:
 
-```mermaid
-flowchart TB
-    subgraph A["💻 Mac A"]
-        direction LR
-        ma["login:<br/>personal"] --> sa["🗂️ TimeMachine-Personal"] --> fa["📁 /srv/timemachine/personal<br/>owner: personal, mode 700"]
-    end
-    subgraph B["💻 Mac B"]
-        direction LR
-        mb["login:<br/>work"] --> sb["🗂️ TimeMachine-Work"] --> fb["📁 /srv/timemachine/work<br/>owner: work, mode 700"]
-    end
-    A ~~~ B
-
-    classDef mac fill:#dbeafe,stroke:#2563eb,color:#1e293b
-    classDef net fill:#f1f5f9,stroke:#64748b,color:#1e293b
-    classDef svc fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef store fill:#fef3c7,stroke:#d97706,color:#78350f
-    class ma,mb mac
-    class sa,sb svc
-    class fa,fb store
-```
+<p align="center"><img src="images/isolation.svg" alt="Each Mac's login opens only its own share and its own private folder. The other Mac's login is refused." width="100%"></p>
 
 Neither login works on the other Mac's share. A Mac that tries is refused.
 
@@ -133,16 +46,7 @@ All Macs share the whole disk. Time Machine deletes a Mac's oldest backups when 
 
 ## 🕰️ What to expect
 
-```mermaid
-timeline
-    title What Time Machine keeps
-    section First backup
-        Day 1 : Copies everything on the Mac : Hours to a day, depending on the network
-    section After that
-        Last 24 hours : Hourly backups
-        Last month : Daily backups
-        Older than a month : Weekly backups until the disk is full
-```
+<p align="center"><img src="images/retention.svg" alt="What Time Machine keeps: the first backup copies everything, then hourly backups for 24 hours, daily backups for a month, and weekly backups until the disk is full." width="100%"></p>
 
 - 🐢 **First backup:** slow. It copies everything. Plan for hours (see [chapter 7](07-performance.md)).
 - 🐇 **After that:** hourly incremental backups, usually a minute or two each.

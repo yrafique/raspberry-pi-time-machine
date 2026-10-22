@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Before and after erasing the disk</title>
+  <desc id="dsc">An old NAS disk with eight partitions, including RAID members and swap, becomes a single ext4 partition labelled TimeMachine that fills the whole disk.</desc>
+  <defs>
+    <linearGradient id="g-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FB3FF"/><stop offset="1" stop-color="#0A6CFF"/></linearGradient>
+    <radialGradient id="r-blue" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0A6CFF" stop-opacity="0.55"/><stop offset="1" stop-color="#0A6CFF" stop-opacity="0"/></radialGradient>
+    <marker id="a-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#4FB3FF" stroke="#4FB3FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CE0FF"/><stop offset="1" stop-color="#1FA6E0"/></linearGradient>
+    <radialGradient id="r-teal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA6E0" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA6E0" stop-opacity="0"/></radialGradient>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#7CE0FF" stroke="#7CE0FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE584"/><stop offset="1" stop-color="#1FA54A"/></linearGradient>
+    <radialGradient id="r-green" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA54A" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA54A" stop-opacity="0"/></radialGradient>
+    <marker id="a-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#5BE584" stroke="#5BE584" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="1" stop-color="#FF8A00"/></linearGradient>
+    <radialGradient id="r-orange" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FF8A00" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A00" stop-opacity="0"/></radialGradient>
+    <marker id="a-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FFC24B" stroke="#FFC24B" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A70"/><stop offset="1" stop-color="#E0281F"/></linearGradient>
+    <radialGradient id="r-red" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E0281F" stop-opacity="0.55"/><stop offset="1" stop-color="#E0281F" stop-opacity="0"/></radialGradient>
+    <marker id="a-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF7A70" stroke="#FF7A70" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-purple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D58BFF"/><stop offset="1" stop-color="#8F3FD0"/></linearGradient>
+    <radialGradient id="r-purple" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8F3FD0" stop-opacity="0.55"/><stop offset="1" stop-color="#8F3FD0" stop-opacity="0"/></radialGradient>
+    <marker id="a-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#D58BFF" stroke="#D58BFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-pink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB8"/><stop offset="1" stop-color="#E03A7C"/></linearGradient>
+    <radialGradient id="r-pink" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E03A7C" stop-opacity="0.55"/><stop offset="1" stop-color="#E03A7C" stop-opacity="0"/></radialGradient>
+    <marker id="a-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF8FB8" stroke="#FF8FB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-gray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9ADB8"/><stop offset="1" stop-color="#5F6572"/></linearGradient>
+    <radialGradient id="r-gray" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#5F6572" stop-opacity="0.55"/><stop offset="1" stop-color="#5F6572" stop-opacity="0"/></radialGradient>
+    <marker id="a-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#A9ADB8" stroke="#A9ADB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-indigo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B8CFF"/><stop offset="1" stop-color="#4B4DE0"/></linearGradient>
+    <radialGradient id="r-indigo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4B4DE0" stop-opacity="0.55"/><stop offset="1" stop-color="#4B4DE0" stop-opacity="0"/></radialGradient>
+    <marker id="a-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#8B8CFF" stroke="#8B8CFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0E1B"/><stop offset="1" stop-color="#131A30"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.11"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.045"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+    <linearGradient id="tilehl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="tileshadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="panel"><rect width="1200" height="520" rx="34"/></clipPath>
+    <style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Helvetica,Arial,sans-serif; }
+    .t  { font-size: 25px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.012em; }
+    .tl { font-size: 21px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.008em; }
+    .s  { font-size: 18px; font-weight: 450; fill: #A7ADBB; letter-spacing: 0.002em; }
+    .eyebrow { font-size: 15px; font-weight: 650; letter-spacing: 0.14em; text-transform: uppercase; }
+    .h1 { font-size: 40px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.028em; }
+    .big { font-size: 46px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.03em; }
+    .m  { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; font-weight: 500; fill: #A7ADBB; }
+    .flow { stroke-dasharray: 2 13; stroke-linecap: round; animation: flow 1.3s linear infinite; }
+    .flowr { stroke-dasharray: 2 13; stroke-linecap: round; animation: flowr 1.3s linear infinite; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -15; } }
+    @keyframes flowr { to { stroke-dashoffset: 15; } }
+    @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .flow,.flowr,.pulse,.float { animation: none; } }
+</style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="520" fill="url(#bg)"/>
+    <circle cx="144" cy="0" r="660" fill="url(#r-red)" opacity="0.5"/><circle cx="1104" cy="520" r="660" fill="url(#r-green)" opacity="0.5"/>
+    <g opacity="0.5"><rect width="1200" height="520" fill="none"/></g>
+  </g>
+  <text x="56" y="56" class="eyebrow" text-anchor="start" fill="#FF7A70">Before</text>
+<rect x="80" y="92" width="94" height="70" rx="14" fill="url(#g-gray)" opacity="0.5"/>
+<rect x="80" y="92" width="94" height="70" rx="14" fill="url(#tilehl)"/>
+<text x="127.0" y="125.0" class="tl" text-anchor="middle" style="fill:#fff" >sda1</text>
+<text x="127.0" y="150.0" class="s" text-anchor="middle" style="fill:#fff" >RAID</text>
+<rect x="180" y="92" width="94" height="70" rx="14" fill="url(#g-gray)" opacity="0.5"/>
+<rect x="180" y="92" width="94" height="70" rx="14" fill="url(#tilehl)"/>
+<text x="227.0" y="125.0" class="tl" text-anchor="middle" style="fill:#fff" >sda2</text>
+<text x="227.0" y="150.0" class="s" text-anchor="middle" style="fill:#fff" >RAID</text>
+<rect x="280" y="92" width="74" height="70" rx="14" fill="url(#g-gray)" opacity="0.5"/>
+<rect x="280" y="92" width="74" height="70" rx="14" fill="url(#tilehl)"/>
+<text x="317.0" y="125.0" class="tl" text-anchor="middle" style="fill:#fff" >sda3</text>
+<text x="317.0" y="150.0" class="s" text-anchor="middle" style="fill:#fff" >swap</text>
+<rect x="360" y="92" width="514" height="70" rx="14" fill="url(#g-red)" opacity="0.95"/>
+<rect x="360" y="92" width="514" height="70" rx="14" fill="url(#tilehl)"/>
+<text x="617.0" y="125.0" class="tl" text-anchor="middle" style="fill:#fff" >sda4</text>
+<text x="617.0" y="150.0" class="s" text-anchor="middle" style="fill:#fff" >ext4, old data</text>
+<rect x="880" y="92" width="234" height="70" rx="14" fill="url(#g-gray)" opacity="0.5"/>
+<rect x="880" y="92" width="234" height="70" rx="14" fill="url(#tilehl)"/>
+<text x="997.0" y="125.0" class="tl" text-anchor="middle" style="fill:#fff" >sda5–8</text>
+<text x="997.0" y="150.0" class="s" text-anchor="middle" style="fill:#fff" >leftovers</text>
+<text x="80.0" y="192.0" class="s" text-anchor="start" >An old NAS disk: eight partitions, 1.7 TB of obsolete data</text>
+<path d="M600,204 L600,224" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M600,284 L600,326" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M600,284 L600,326" fill="none" stroke="#7CE0FF" stroke-width="3.2" class="flow"/>
+<rect x="380.0" y="226.0" width="440.0" height="56.0" rx="28" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="380.0" y="226.0" width="440.0" height="56.0" rx="28" fill="#FFC24B" opacity="0.10"/>
+<rect x="380.5" y="226.5" width="439.0" height="55.0" rx="28" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g transform="translate(411.0,241.0) scale(1.083)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13"/></g>
+<text x="450.0" y="261.0" class="m" text-anchor="start" style="fill:#F5F5F7" >wipefs  ·  parted  ·  mkfs.ext4</text>
+<text x="56" y="340" class="eyebrow" text-anchor="start" fill="#5BE584">After</text>
+<rect x="80" y="372" width="1034" height="78" rx="18" fill="url(#g-green)"/>
+<rect x="80" y="372" width="1034" height="78" rx="18" fill="url(#tilehl)"/>
+<text x="110.0" y="408.0" class="t" text-anchor="start" style="fill:#fff" >sda1  ·  ext4  ·  label “TimeMachine”</text>
+<text x="110.0" y="435.0" class="s" text-anchor="start" style="fill:#fff" >1.8 TiB, the whole disk, mounted at /srv/timemachine</text>
+<g transform="translate(1059.0,394.0) scale(1.417)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></g>
+<text x="80.0" y="486.0" class="s" text-anchor="start" >One partition, one purpose</text>
+  <rect x="0.5" y="0.5" width="1199" height="519" rx="34" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+</svg>

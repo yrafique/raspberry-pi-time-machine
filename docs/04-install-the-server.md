@@ -15,24 +15,7 @@ Step 2, the drive, comes between them. Or run everything with `sudo ./scripts/se
 
 ## 🧭 What the scripts build
 
-```mermaid
-flowchart LR
-    cfg["📝 config.env<br/>USERS=&quot;personal work&quot;"] --> s3["⚙️ 03-configure-shares.sh"]
-    s3 --> u["👤 Linux users<br/>personal, work<br/>(no login shell)"]
-    s3 --> f["📁 Folders<br/>/srv/timemachine/personal<br/>/srv/timemachine/work"]
-    s3 --> smb["🗂️ /etc/samba/smb.conf<br/>one share per user"]
-    s3 --> av["🔎 /etc/avahi/services/<br/>timemachine.service"]
-    smb --> r1(["🔁 smbd restarts"])
-    av --> r2(["🔁 avahi-daemon restarts"])
-    r1 --> pw["🔑 smbpasswd<br/>sets each password"]
-
-    classDef cfg fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef run fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    classDef out fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class cfg cfg
-    class s3,pw run
-    class u,f,smb,av,r1,r2 out
-```
+<p align="center"><img src="images/script_flow.svg" alt="config.env feeds the share script, which creates Linux users, folders, the Samba configuration and the Bonjour service, then restarts the services and sets passwords." width="100%"></p>
 
 ## 📦 4.1 Install the packages
 
@@ -114,19 +97,7 @@ Then **delete** the default `[homes]`, `[printers]` and `[print$]` sections, whi
    directory mask = 0700
 ```
 
-```mermaid
-flowchart LR
-    share["🗂️ [TimeMachine-Personal]"] --> path["📁 path<br/>the folder on the disk"]
-    share --> vu["🔑 valid users<br/>only this login may enter"]
-    share --> vfs["🍎 vfs objects<br/>catia, fruit, streams_xattr"]
-    vfs --> tmyes["⏰ fruit:time machine = yes<br/><b>the key line</b>"]
-    share --> masks["🔒 create mask 0600<br/>directory mask 0700"]
 
-    classDef key fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef n fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    class tmyes key
-    class share,path,vu,vfs,masks n
-```
 
 | Setting | Meaning |
 |---|---|

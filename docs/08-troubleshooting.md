@@ -7,30 +7,7 @@
 
 ## 🧭 Find your problem
 
-```mermaid
-flowchart TD
-    start{"What's happening?"} --> a["🔍 The Mac can't see<br/>the share at all"]
-    start --> b["🔒 The Mac sees it but<br/>can't connect"]
-    start --> c["💥 Backups fail after a<br/>macOS or Samba update"]
-    start --> d["🐢 A backup stopped<br/>or is slow"]
-    start --> e["💾 The disk or boot<br/>misbehaves"]
-    a --> a1["Check ping, smbd and avahi,<br/>then connect by hand"]
-    b --> b2{"Does tcpdump on the Pi<br/>see the Mac's packets?"}
-    b2 -- "yes" --> b3["Pi side: password,<br/>valid users, logs"]
-    b2 -- "no, nothing" --> b4["💼 A security client on<br/>the Mac is blocking it"]
-    c --> c1["Samba must be<br/>4.22.6 or newer"]
-    d --> d1["Mac asleep? Samba restarted?<br/>Or just a slow first backup"]
-    e --> e1["lsblk, lsusb -t,<br/>and the fstab line"]
-
-    classDef q fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    classDef p fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef bad fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef ok fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class start,b2 q
-    class a,b,c,d,e p
-    class b4 bad
-    class b3,a1,c1,d1,e1 ok
-```
+<p align="center"><img src="images/troubleshoot_map.svg" alt="Five kinds of problem, each with a first move: can't see the share, can't connect, fails after an update, stopped or slow, and disk or boot. verify.sh is the place to start." width="100%"></p>
 
 | | Jump to |
 |---|---|
@@ -89,25 +66,7 @@ A work laptop with a security client such as **Zscaler**, a corporate VPN, or an
 - Finder says "There was a problem connecting to the server".
 - The Pi's logs and `tcpdump` show **no packets** from the laptop.
 
-```mermaid
-flowchart LR
-    subgraph good["✅ A normal Mac"]
-        direction LR
-        g1["💻 Mac"] -->|"SMB, port 445"| g2["🍓 Pi"]
-    end
-    subgraph bad["❌ A Mac with a security client"]
-        direction LR
-        b1["💻 Mac"] --> b2{{"🛡️ Security client<br/>intercepts SMB"}}
-        b2 -. "traffic never leaves" .-x b3["🍓 Pi<br/>sees 0 packets"]
-    end
-
-    classDef ok fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef blk fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef n fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    class g1,g2 ok
-    class b2 blk
-    class b1,b3 n
-```
+<p align="center"><img src="images/blocked_laptop.svg" alt="A normal Mac sends SMB port 445 straight to the Pi. A Mac with a security client has its SMB traffic intercepted before it leaves, so the Pi sees nothing." width="100%"></p>
 
 ### 🪤 A trap: the port test that lies
 
@@ -176,24 +135,7 @@ Debian 13 ships 4.22.11. `verify.sh` fails with a clear message on an affected v
 
 ## 💾 Disk and boot problems
 
-```mermaid
-flowchart TD
-    q{"What do you see?"} --> n1["Disk missing<br/>from lsblk"]
-    q --> n2["lsusb -t shows 480M"]
-    q --> n3["Pi boots, but<br/>/srv/timemachine is empty"]
-    q --> n4["Emergency mode<br/>on boot"]
-    n1 --> f1["Try another USB port, then another cable.<br/>3.5 inch disks need their own power.<br/>Check dmesg for USB resets."]
-    n2 --> f2["USB 2.0 port or cable.<br/>Use a blue port and a USB 3.0 cable."]
-    n3 --> f3["The disk didn't mount.<br/>Run lsblk, then: sudo mount /srv/timemachine<br/>Samba stays stopped in this state."]
-    n4 --> f4["A bad /etc/fstab line.<br/>Make sure the disk line has nofail."]
-
-    classDef q fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
-    classDef p fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef ok fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class q q
-    class n1,n2,n3,n4 p
-    class f1,f2,f3,f4 ok
-```
+<p align="center"><img src="images/disk_boot.svg" alt="Four disk and boot symptoms with fixes: disk missing, shows 480M, empty mount, and emergency mode." width="100%"></p>
 
 - 🔌 **The disk doesn't show up in `lsblk`.** Try another USB port, then another cable. A 3.5" disk needs its own power supply. A bus-powered 2.5" disk that keeps disconnecting may need a powered USB hub. Check `dmesg | tail -30` for USB reset messages.
 - 🐌 **The disk shows `480M` in `lsusb -t`.** It's on a USB 2.0 port or cable. Use a blue USB 3.0 port on the Pi 4 and a USB 3.0 cable.

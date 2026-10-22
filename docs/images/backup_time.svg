@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">How long the first backup takes</title>
+  <desc id="dsc">At 15 MB/s a first backup takes about 1.9 hours for 100 GB, 9.3 hours for 500 GB and 18.5 hours for 1 TB. At 40 MB/s it takes 0.7, 3.5 and 7 hours.</desc>
+  <defs>
+    <linearGradient id="g-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FB3FF"/><stop offset="1" stop-color="#0A6CFF"/></linearGradient>
+    <radialGradient id="r-blue" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0A6CFF" stop-opacity="0.55"/><stop offset="1" stop-color="#0A6CFF" stop-opacity="0"/></radialGradient>
+    <marker id="a-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#4FB3FF" stroke="#4FB3FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CE0FF"/><stop offset="1" stop-color="#1FA6E0"/></linearGradient>
+    <radialGradient id="r-teal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA6E0" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA6E0" stop-opacity="0"/></radialGradient>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#7CE0FF" stroke="#7CE0FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE584"/><stop offset="1" stop-color="#1FA54A"/></linearGradient>
+    <radialGradient id="r-green" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA54A" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA54A" stop-opacity="0"/></radialGradient>
+    <marker id="a-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#5BE584" stroke="#5BE584" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="1" stop-color="#FF8A00"/></linearGradient>
+    <radialGradient id="r-orange" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FF8A00" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A00" stop-opacity="0"/></radialGradient>
+    <marker id="a-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FFC24B" stroke="#FFC24B" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A70"/><stop offset="1" stop-color="#E0281F"/></linearGradient>
+    <radialGradient id="r-red" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E0281F" stop-opacity="0.55"/><stop offset="1" stop-color="#E0281F" stop-opacity="0"/></radialGradient>
+    <marker id="a-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF7A70" stroke="#FF7A70" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-purple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D58BFF"/><stop offset="1" stop-color="#8F3FD0"/></linearGradient>
+    <radialGradient id="r-purple" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8F3FD0" stop-opacity="0.55"/><stop offset="1" stop-color="#8F3FD0" stop-opacity="0"/></radialGradient>
+    <marker id="a-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#D58BFF" stroke="#D58BFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-pink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB8"/><stop offset="1" stop-color="#E03A7C"/></linearGradient>
+    <radialGradient id="r-pink" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E03A7C" stop-opacity="0.55"/><stop offset="1" stop-color="#E03A7C" stop-opacity="0"/></radialGradient>
+    <marker id="a-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF8FB8" stroke="#FF8FB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-gray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9ADB8"/><stop offset="1" stop-color="#5F6572"/></linearGradient>
+    <radialGradient id="r-gray" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#5F6572" stop-opacity="0.55"/><stop offset="1" stop-color="#5F6572" stop-opacity="0"/></radialGradient>
+    <marker id="a-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#A9ADB8" stroke="#A9ADB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-indigo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B8CFF"/><stop offset="1" stop-color="#4B4DE0"/></linearGradient>
+    <radialGradient id="r-indigo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4B4DE0" stop-opacity="0.55"/><stop offset="1" stop-color="#4B4DE0" stop-opacity="0"/></radialGradient>
+    <marker id="a-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#8B8CFF" stroke="#8B8CFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0E1B"/><stop offset="1" stop-color="#131A30"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.11"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.045"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+    <linearGradient id="tilehl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="tileshadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="panel"><rect width="1200" height="480" rx="34"/></clipPath>
+    <style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Helvetica,Arial,sans-serif; }
+    .t  { font-size: 25px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.012em; }
+    .tl { font-size: 21px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.008em; }
+    .s  { font-size: 18px; font-weight: 450; fill: #A7ADBB; letter-spacing: 0.002em; }
+    .eyebrow { font-size: 15px; font-weight: 650; letter-spacing: 0.14em; text-transform: uppercase; }
+    .h1 { font-size: 40px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.028em; }
+    .big { font-size: 46px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.03em; }
+    .m  { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; font-weight: 500; fill: #A7ADBB; }
+    .flow { stroke-dasharray: 2 13; stroke-linecap: round; animation: flow 1.3s linear infinite; }
+    .flowr { stroke-dasharray: 2 13; stroke-linecap: round; animation: flowr 1.3s linear infinite; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -15; } }
+    @keyframes flowr { to { stroke-dashoffset: 15; } }
+    @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .flow,.flowr,.pulse,.float { animation: none; } }
+</style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="480" fill="url(#bg)"/>
+    <circle cx="144" cy="0" r="660" fill="url(#r-orange)" opacity="0.5"/><circle cx="1104" cy="480" r="660" fill="url(#r-green)" opacity="0.5"/>
+    <g opacity="0.5"><rect width="1200" height="480" fill="none"/></g>
+  </g>
+  <text x="56" y="58" class="eyebrow" text-anchor="start" fill="#7CE0FF">The first backup, in hours</text>
+<path d="M110 410.0 H1140" stroke="#fff" stroke-opacity="0.28" stroke-width="1.5"/>
+<text x="96.0" y="416.0" class="s" text-anchor="end" style="fill:#6E7587" >0</text>
+<path d="M110 345.0 H1140" stroke="#fff" stroke-opacity="0.09" stroke-width="1.5"/>
+<text x="96.0" y="351.0" class="s" text-anchor="end" style="fill:#6E7587" >5</text>
+<path d="M110 280.0 H1140" stroke="#fff" stroke-opacity="0.09" stroke-width="1.5"/>
+<text x="96.0" y="286.0" class="s" text-anchor="end" style="fill:#6E7587" >10</text>
+<path d="M110 215.0 H1140" stroke="#fff" stroke-opacity="0.09" stroke-width="1.5"/>
+<text x="96.0" y="221.0" class="s" text-anchor="end" style="fill:#6E7587" >15</text>
+<path d="M110 150.0 H1140" stroke="#fff" stroke-opacity="0.09" stroke-width="1.5"/>
+<text x="96.0" y="156.0" class="s" text-anchor="end" style="fill:#6E7587" >20</text>
+<rect x="186" y="385.3" width="104" height="24.7" rx="14" fill="url(#g-orange)"/>
+<rect x="186" y="385.3" width="104" height="24.7" rx="14" fill="url(#tilehl)" opacity="0.7"/>
+<text x="238.0" y="373.3" class="tl" text-anchor="middle" >1.9 h</text>
+<rect x="310" y="400.9" width="104" height="9.1" rx="14" fill="url(#g-green)"/>
+<rect x="310" y="400.9" width="104" height="9.1" rx="14" fill="url(#tilehl)" opacity="0.7"/>
+<text x="362.0" y="388.9" class="tl" text-anchor="middle" >0.7 h</text>
+<text x="300.0" y="444.0" class="t" text-anchor="middle" >100 GB</text>
+<rect x="526" y="289.1" width="104" height="120.9" rx="14" fill="url(#g-orange)"/>
+<rect x="526" y="289.1" width="104" height="120.9" rx="14" fill="url(#tilehl)" opacity="0.7"/>
+<text x="578.0" y="277.1" class="tl" text-anchor="middle" >9.3 h</text>
+<rect x="650" y="364.5" width="104" height="45.5" rx="14" fill="url(#g-green)"/>
+<rect x="650" y="364.5" width="104" height="45.5" rx="14" fill="url(#tilehl)" opacity="0.7"/>
+<text x="702.0" y="352.5" class="tl" text-anchor="middle" >3.5 h</text>
+<text x="640.0" y="444.0" class="t" text-anchor="middle" >500 GB</text>
+<rect x="866" y="169.5" width="104" height="240.5" rx="14" fill="url(#g-orange)"/>
+<rect x="866" y="169.5" width="104" height="240.5" rx="14" fill="url(#tilehl)" opacity="0.7"/>
+<text x="918.0" y="157.5" class="tl" text-anchor="middle" >18.5 h</text>
+<rect x="990" y="319.0" width="104" height="91.0" rx="14" fill="url(#g-green)"/>
+<rect x="990" y="319.0" width="104" height="91.0" rx="14" fill="url(#tilehl)" opacity="0.7"/>
+<text x="1042.0" y="307.0" class="tl" text-anchor="middle" >7 h</text>
+<text x="980.0" y="444.0" class="t" text-anchor="middle" >1 TB</text>
+<rect x="630.5" y="55.5" width="199.0" height="29" rx="14.5" fill="#FFC24B" fill-opacity="0.16" stroke="#FFC24B" stroke-opacity="0.55"/>
+<text x="730" y="75.4" text-anchor="middle" style="font-size:15px;font-weight:650;letter-spacing:0.01em" fill="#FFC24B">15 MB/s: slow Wi-Fi</text>
+<rect x="862.5" y="55.5" width="199.0" height="29" rx="14.5" fill="#5BE584" fill-opacity="0.16" stroke="#5BE584" stroke-opacity="0.55"/>
+<text x="962" y="75.4" text-anchor="middle" style="font-size:15px;font-weight:650;letter-spacing:0.01em" fill="#5BE584">40 MB/s: good wired</text>
+  <rect x="0.5" y="0.5" width="1199" height="479" rx="34" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+</svg>

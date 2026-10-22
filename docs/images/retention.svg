@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 388" width="1200" height="388" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">What Time Machine keeps</title>
+  <desc id="dsc">The first backup copies everything. After that, it keeps hourly backups for 24 hours, daily backups for a month, and weekly backups until the disk is full.</desc>
+  <defs>
+    <linearGradient id="g-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FB3FF"/><stop offset="1" stop-color="#0A6CFF"/></linearGradient>
+    <radialGradient id="r-blue" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0A6CFF" stop-opacity="0.55"/><stop offset="1" stop-color="#0A6CFF" stop-opacity="0"/></radialGradient>
+    <marker id="a-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#4FB3FF" stroke="#4FB3FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CE0FF"/><stop offset="1" stop-color="#1FA6E0"/></linearGradient>
+    <radialGradient id="r-teal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA6E0" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA6E0" stop-opacity="0"/></radialGradient>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#7CE0FF" stroke="#7CE0FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE584"/><stop offset="1" stop-color="#1FA54A"/></linearGradient>
+    <radialGradient id="r-green" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA54A" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA54A" stop-opacity="0"/></radialGradient>
+    <marker id="a-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#5BE584" stroke="#5BE584" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="1" stop-color="#FF8A00"/></linearGradient>
+    <radialGradient id="r-orange" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FF8A00" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A00" stop-opacity="0"/></radialGradient>
+    <marker id="a-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FFC24B" stroke="#FFC24B" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A70"/><stop offset="1" stop-color="#E0281F"/></linearGradient>
+    <radialGradient id="r-red" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E0281F" stop-opacity="0.55"/><stop offset="1" stop-color="#E0281F" stop-opacity="0"/></radialGradient>
+    <marker id="a-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF7A70" stroke="#FF7A70" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-purple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D58BFF"/><stop offset="1" stop-color="#8F3FD0"/></linearGradient>
+    <radialGradient id="r-purple" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8F3FD0" stop-opacity="0.55"/><stop offset="1" stop-color="#8F3FD0" stop-opacity="0"/></radialGradient>
+    <marker id="a-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#D58BFF" stroke="#D58BFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-pink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB8"/><stop offset="1" stop-color="#E03A7C"/></linearGradient>
+    <radialGradient id="r-pink" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E03A7C" stop-opacity="0.55"/><stop offset="1" stop-color="#E03A7C" stop-opacity="0"/></radialGradient>
+    <marker id="a-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF8FB8" stroke="#FF8FB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-gray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9ADB8"/><stop offset="1" stop-color="#5F6572"/></linearGradient>
+    <radialGradient id="r-gray" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#5F6572" stop-opacity="0.55"/><stop offset="1" stop-color="#5F6572" stop-opacity="0"/></radialGradient>
+    <marker id="a-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#A9ADB8" stroke="#A9ADB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-indigo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B8CFF"/><stop offset="1" stop-color="#4B4DE0"/></linearGradient>
+    <radialGradient id="r-indigo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4B4DE0" stop-opacity="0.55"/><stop offset="1" stop-color="#4B4DE0" stop-opacity="0"/></radialGradient>
+    <marker id="a-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#8B8CFF" stroke="#8B8CFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0E1B"/><stop offset="1" stop-color="#131A30"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.11"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.045"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+    <linearGradient id="tilehl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="tileshadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="panel"><rect width="1200" height="388" rx="34"/></clipPath>
+    <style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Helvetica,Arial,sans-serif; }
+    .t  { font-size: 25px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.012em; }
+    .tl { font-size: 21px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.008em; }
+    .s  { font-size: 18px; font-weight: 450; fill: #A7ADBB; letter-spacing: 0.002em; }
+    .eyebrow { font-size: 15px; font-weight: 650; letter-spacing: 0.14em; text-transform: uppercase; }
+    .h1 { font-size: 40px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.028em; }
+    .big { font-size: 46px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.03em; }
+    .m  { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; font-weight: 500; fill: #A7ADBB; }
+    .flow { stroke-dasharray: 2 13; stroke-linecap: round; animation: flow 1.3s linear infinite; }
+    .flowr { stroke-dasharray: 2 13; stroke-linecap: round; animation: flowr 1.3s linear infinite; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -15; } }
+    @keyframes flowr { to { stroke-dashoffset: 15; } }
+    @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .flow,.flowr,.pulse,.float { animation: none; } }
+</style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="388" fill="url(#bg)"/>
+    <circle cx="144" cy="0" r="660" fill="url(#r-purple)" opacity="0.5"/><circle cx="1104" cy="388" r="660" fill="url(#r-blue)" opacity="0.5"/>
+    <g opacity="0.5"><rect width="1200" height="388" fill="none"/></g>
+  </g>
+  <text x="56" y="60" class="eyebrow" text-anchor="start" fill="#7CE0FF">What Time Machine keeps</text>
+<rect x="55.0" y="96.0" width="250.0" height="252.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="55.0" y="96.0" width="250.0" height="252.0" rx="22" fill="#D58BFF" opacity="0.10"/>
+<rect x="55.5" y="96.5" width="249.0" height="251.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="152.0" y="118.0" width="56" height="56" rx="15.1" fill="url(#g-purple)"/></g>
+<rect x="152.0" y="118.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="152.5" y="118.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(166.0,132.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 11l4.5 4.5 4.5-4.5M5 20h14"/></g>
+<text x="180.0" y="218.0" class="tl" text-anchor="middle" >First backup</text>
+<text x="180.0" y="246.0" class="s" text-anchor="middle" >Copies everything</text>
+<rect x="90.0" y="268" width="180" height="22" rx="8" fill="#D58BFF" opacity="0.85"/>
+<text x="180.0" y="322.0" class="s" text-anchor="middle" style="fill:#A7ADBB" >hours to a day</text>
+<path d="M309.0,208 L331.0,208" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M309.0,208 L331.0,208" fill="none" stroke="#7CE0FF" stroke-width="3.2" class="flow"/>
+<rect x="335.0" y="96.0" width="250.0" height="252.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="335.0" y="96.0" width="250.0" height="252.0" rx="22" fill="#4FB3FF" opacity="0.10"/>
+<rect x="335.5" y="96.5" width="249.0" height="251.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="432.0" y="118.0" width="56" height="56" rx="15.1" fill="url(#g-blue)"/></g>
+<rect x="432.0" y="118.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="432.5" y="118.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(446.0,132.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g>
+<text x="460.0" y="218.0" class="tl" text-anchor="middle" >Last 24 hours</text>
+<text x="460.0" y="246.0" class="s" text-anchor="middle" >Hourly backups</text>
+<rect x="368.5" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="376.3" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="384.2" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="392.0" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="399.8" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="407.6" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="415.5" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="423.3" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="431.1" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="438.9" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="446.8" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="454.6" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="462.4" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="470.2" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="478.1" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="485.9" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="493.7" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="501.5" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="509.4" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="517.2" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="525.0" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="532.8" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="540.7" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<rect x="548.5" y="268" width="3" height="22" rx="1.5" fill="#4FB3FF" opacity="0.9"/>
+<text x="460.0" y="322.0" class="s" text-anchor="middle" style="fill:#A7ADBB" >24 snapshots</text>
+<path d="M589.0,208 L611.0,208" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M589.0,208 L611.0,208" fill="none" stroke="#7CE0FF" stroke-width="3.2" class="flow"/>
+<rect x="615.0" y="96.0" width="250.0" height="252.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="615.0" y="96.0" width="250.0" height="252.0" rx="22" fill="#7CE0FF" opacity="0.10"/>
+<rect x="615.5" y="96.5" width="249.0" height="251.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="712.0" y="118.0" width="56" height="56" rx="15.1" fill="url(#g-teal)"/></g>
+<rect x="712.0" y="118.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="712.5" y="118.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(726.0,132.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g>
+<text x="740.0" y="218.0" class="tl" text-anchor="middle" >Last month</text>
+<text x="740.0" y="246.0" class="s" text-anchor="middle" >Daily backups</text>
+<rect x="648.5" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="662.3" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="676.2" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="690.0" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="703.9" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="717.7" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="731.6" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="745.4" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="759.3" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="773.1" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="787.0" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="800.8" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="814.7" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<rect x="828.5" y="268" width="3" height="22" rx="1.5" fill="#7CE0FF" opacity="0.9"/>
+<text x="740.0" y="322.0" class="s" text-anchor="middle" style="fill:#A7ADBB" >about 30 snapshots</text>
+<path d="M869.0,208 L891.0,208" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M869.0,208 L891.0,208" fill="none" stroke="#7CE0FF" stroke-width="3.2" class="flow"/>
+<rect x="895.0" y="96.0" width="250.0" height="252.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="895.0" y="96.0" width="250.0" height="252.0" rx="22" fill="#FFC24B" opacity="0.10"/>
+<rect x="895.5" y="96.5" width="249.0" height="251.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="992.0" y="118.0" width="56" height="56" rx="15.1" fill="url(#g-orange)"/></g>
+<rect x="992.0" y="118.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="992.5" y="118.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(1006.0,132.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8L3.5 9.7l5.9-.8z"/></g>
+<text x="1020.0" y="218.0" class="tl" text-anchor="middle" >Older</text>
+<text x="1020.0" y="246.0" class="s" text-anchor="middle" >Weekly backups</text>
+<rect x="928.5" y="268" width="3" height="22" rx="1.5" fill="#FFC24B" opacity="0.9"/>
+<rect x="964.5" y="268" width="3" height="22" rx="1.5" fill="#FFC24B" opacity="0.9"/>
+<rect x="1000.5" y="268" width="3" height="22" rx="1.5" fill="#FFC24B" opacity="0.9"/>
+<rect x="1036.5" y="268" width="3" height="22" rx="1.5" fill="#FFC24B" opacity="0.9"/>
+<rect x="1072.5" y="268" width="3" height="22" rx="1.5" fill="#FFC24B" opacity="0.9"/>
+<rect x="1108.5" y="268" width="3" height="22" rx="1.5" fill="#FFC24B" opacity="0.9"/>
+<text x="1020.0" y="322.0" class="s" text-anchor="middle" style="fill:#A7ADBB" >until the disk is full</text>
+  <rect x="0.5" y="0.5" width="1199" height="387" rx="34" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+</svg>

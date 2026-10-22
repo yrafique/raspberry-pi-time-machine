@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 790" width="1200" height="790" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Find your problem</title>
+  <desc id="dsc">Five kinds of problem: the Mac can't see the share, can't connect, fails after an update, a backup stopped or is slow, or the disk or boot misbehaves. Each has a first move.</desc>
+  <defs>
+    <linearGradient id="g-blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FB3FF"/><stop offset="1" stop-color="#0A6CFF"/></linearGradient>
+    <radialGradient id="r-blue" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0A6CFF" stop-opacity="0.55"/><stop offset="1" stop-color="#0A6CFF" stop-opacity="0"/></radialGradient>
+    <marker id="a-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#4FB3FF" stroke="#4FB3FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CE0FF"/><stop offset="1" stop-color="#1FA6E0"/></linearGradient>
+    <radialGradient id="r-teal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA6E0" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA6E0" stop-opacity="0"/></radialGradient>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#7CE0FF" stroke="#7CE0FF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BE584"/><stop offset="1" stop-color="#1FA54A"/></linearGradient>
+    <radialGradient id="r-green" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#1FA54A" stop-opacity="0.55"/><stop offset="1" stop-color="#1FA54A" stop-opacity="0"/></radialGradient>
+    <marker id="a-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#5BE584" stroke="#5BE584" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-orange" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="1" stop-color="#FF8A00"/></linearGradient>
+    <radialGradient id="r-orange" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FF8A00" stop-opacity="0.55"/><stop offset="1" stop-color="#FF8A00" stop-opacity="0"/></radialGradient>
+    <marker id="a-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FFC24B" stroke="#FFC24B" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A70"/><stop offset="1" stop-color="#E0281F"/></linearGradient>
+    <radialGradient id="r-red" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E0281F" stop-opacity="0.55"/><stop offset="1" stop-color="#E0281F" stop-opacity="0"/></radialGradient>
+    <marker id="a-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF7A70" stroke="#FF7A70" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-purple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D58BFF"/><stop offset="1" stop-color="#8F3FD0"/></linearGradient>
+    <radialGradient id="r-purple" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#8F3FD0" stop-opacity="0.55"/><stop offset="1" stop-color="#8F3FD0" stop-opacity="0"/></radialGradient>
+    <marker id="a-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#D58BFF" stroke="#D58BFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-pink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF8FB8"/><stop offset="1" stop-color="#E03A7C"/></linearGradient>
+    <radialGradient id="r-pink" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E03A7C" stop-opacity="0.55"/><stop offset="1" stop-color="#E03A7C" stop-opacity="0"/></radialGradient>
+    <marker id="a-pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#FF8FB8" stroke="#FF8FB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-gray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9ADB8"/><stop offset="1" stop-color="#5F6572"/></linearGradient>
+    <radialGradient id="r-gray" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#5F6572" stop-opacity="0.55"/><stop offset="1" stop-color="#5F6572" stop-opacity="0"/></radialGradient>
+    <marker id="a-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#A9ADB8" stroke="#A9ADB8" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="g-indigo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B8CFF"/><stop offset="1" stop-color="#4B4DE0"/></linearGradient>
+    <radialGradient id="r-indigo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#4B4DE0" stop-opacity="0.55"/><stop offset="1" stop-color="#4B4DE0" stop-opacity="0"/></radialGradient>
+    <marker id="a-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2L8.6 5 1 8.8z" fill="#8B8CFF" stroke="#8B8CFF" stroke-width="1" stroke-linejoin="round"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0E1B"/><stop offset="1" stop-color="#131A30"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.11"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.045"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/><stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+    <linearGradient id="tilehl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/><stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="tileshadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="panel"><rect width="1200" height="790" rx="34"/></clipPath>
+    <style>
+    text { font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Helvetica,Arial,sans-serif; }
+    .t  { font-size: 25px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.012em; }
+    .tl { font-size: 21px; font-weight: 650; fill: #F5F5F7; letter-spacing: -0.008em; }
+    .s  { font-size: 18px; font-weight: 450; fill: #A7ADBB; letter-spacing: 0.002em; }
+    .eyebrow { font-size: 15px; font-weight: 650; letter-spacing: 0.14em; text-transform: uppercase; }
+    .h1 { font-size: 40px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.028em; }
+    .big { font-size: 46px; font-weight: 720; fill: #F5F5F7; letter-spacing: -0.03em; }
+    .m  { font-family: ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace; font-size: 17px; font-weight: 500; fill: #A7ADBB; }
+    .flow { stroke-dasharray: 2 13; stroke-linecap: round; animation: flow 1.3s linear infinite; }
+    .flowr { stroke-dasharray: 2 13; stroke-linecap: round; animation: flowr 1.3s linear infinite; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -15; } }
+    @keyframes flowr { to { stroke-dashoffset: 15; } }
+    @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+    @media (prefers-reduced-motion: reduce) { .flow,.flowr,.pulse,.float { animation: none; } }
+</style>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="790" fill="url(#bg)"/>
+    <circle cx="144" cy="0" r="660" fill="url(#r-orange)" opacity="0.5"/><circle cx="1104" cy="790" r="660" fill="url(#r-red)" opacity="0.5"/><circle cx="660" cy="395" r="660" fill="url(#r-blue)" opacity="0.5"/>
+    <g opacity="0.5"><rect width="1200" height="790" fill="none"/></g>
+  </g>
+  <text x="56" y="58" class="eyebrow" text-anchor="start" fill="#7CE0FF">Find your problem</text>
+<rect x="440.0" y="85.0" width="320.0" height="90.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="440.0" y="85.0" width="320.0" height="90.0" rx="22" fill="#4FB3FF" opacity="0.10"/>
+<rect x="440.5" y="85.5" width="319.0" height="89.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="460.0" y="102.0" width="56" height="56" rx="15.1" fill="url(#g-blue)"/></g>
+<rect x="460.0" y="102.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="460.5" y="102.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(474.0,116.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L20.5 20.5"/></g>
+<text x="534.0" y="137.0" class="tl" text-anchor="start" >What's happening?</text>
+<path d="M600,176 C600,214.0 152,214.0 152,252" fill="none" stroke="#FFC24B" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-orange)"/>
+<path d="M600,176 C600,214.0 152,214.0 152,252" fill="none" stroke="#FFC24B" stroke-width="3.2" class="flow"/>
+<rect x="48.0" y="246.0" width="208.0" height="148.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="48.0" y="246.0" width="208.0" height="148.0" rx="22" fill="#FFC24B" opacity="0.10"/>
+<rect x="48.5" y="246.5" width="207.0" height="147.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="129.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#g-orange)"/></g>
+<rect x="129.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#tilehl)"/>
+<rect x="129.5" y="266.5" width="45" height="45" rx="12.4" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(140.5,277.5) scale(0.958)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L20.5 20.5"/></g>
+<text x="152.0" y="344.0" class="tl" text-anchor="middle" >Can't see the share</text>
+<path d="M152,394 L152,442" fill="none" stroke="#FFC24B" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-orange)"/>
+<path d="M152,394 L152,442" fill="none" stroke="#FFC24B" stroke-width="2.6" class="flow"/>
+<rect x="48.0" y="446.0" width="208.0" height="112.0" rx="20" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="48.5" y="446.5" width="207.0" height="111.0" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<text x="152" y="470" class="eyebrow" text-anchor="middle" fill="#FFC24B">first move</text>
+<text x="152.0" y="498.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Check ping, smbd,</text>
+<text x="152.0" y="519.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >avahi, then connect</text>
+<text x="152.0" y="540.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >by hand</text>
+<path d="M600,176 C600,214.0 376,214.0 376,252" fill="none" stroke="#FF7A70" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-red)"/>
+<path d="M600,176 C600,214.0 376,214.0 376,252" fill="none" stroke="#FF7A70" stroke-width="3.2" class="flow"/>
+<rect x="272.0" y="246.0" width="208.0" height="148.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="272.0" y="246.0" width="208.0" height="148.0" rx="22" fill="#FF7A70" opacity="0.10"/>
+<rect x="272.5" y="246.5" width="207.0" height="147.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="353.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#g-red)"/></g>
+<rect x="353.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#tilehl)"/>
+<rect x="353.5" y="266.5" width="45" height="45" rx="12.4" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(364.5,277.5) scale(0.958)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g>
+<text x="376.0" y="344.0" class="tl" text-anchor="middle" >Can't connect</text>
+<path d="M376,394 L376,442" fill="none" stroke="#FF7A70" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-red)"/>
+<path d="M376,394 L376,442" fill="none" stroke="#FF7A70" stroke-width="2.6" class="flow"/>
+<rect x="272.0" y="446.0" width="208.0" height="112.0" rx="20" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="272.5" y="446.5" width="207.0" height="111.0" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<text x="376" y="470" class="eyebrow" text-anchor="middle" fill="#FF7A70">first move</text>
+<text x="376.0" y="498.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Run tcpdump on the</text>
+<text x="376.0" y="519.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Pi while the Mac</text>
+<text x="376.0" y="540.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >tries to connect</text>
+<path d="M600,176 L600,252" fill="none" stroke="#D58BFF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-purple)"/>
+<path d="M600,176 L600,252" fill="none" stroke="#D58BFF" stroke-width="3.2" class="flow"/>
+<rect x="496.0" y="246.0" width="208.0" height="148.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="496.0" y="246.0" width="208.0" height="148.0" rx="22" fill="#D58BFF" opacity="0.10"/>
+<rect x="496.5" y="246.5" width="207.0" height="147.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="577.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#g-purple)"/></g>
+<rect x="577.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#tilehl)"/>
+<rect x="577.5" y="266.5" width="45" height="45" rx="12.4" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(588.5,277.5) scale(0.958)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 5v6h-6"/></g>
+<text x="600.0" y="344.0" class="tl" text-anchor="middle" >Fails after update</text>
+<path d="M600,394 L600,442" fill="none" stroke="#D58BFF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-purple)"/>
+<path d="M600,394 L600,442" fill="none" stroke="#D58BFF" stroke-width="2.6" class="flow"/>
+<rect x="496.0" y="446.0" width="208.0" height="112.0" rx="20" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="496.5" y="446.5" width="207.0" height="111.0" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<text x="600" y="470" class="eyebrow" text-anchor="middle" fill="#D58BFF">first move</text>
+<text x="600.0" y="498.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Samba must be</text>
+<text x="600.0" y="519.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >4.22.6 or newer</text>
+<path d="M600,176 C600,214.0 824,214.0 824,252" fill="none" stroke="#4FB3FF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-blue)"/>
+<path d="M600,176 C600,214.0 824,214.0 824,252" fill="none" stroke="#4FB3FF" stroke-width="3.2" class="flow"/>
+<rect x="720.0" y="246.0" width="208.0" height="148.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="720.0" y="246.0" width="208.0" height="148.0" rx="22" fill="#4FB3FF" opacity="0.10"/>
+<rect x="720.5" y="246.5" width="207.0" height="147.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="801.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#g-blue)"/></g>
+<rect x="801.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#tilehl)"/>
+<rect x="801.5" y="266.5" width="45" height="45" rx="12.4" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(812.5,277.5) scale(0.958)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g>
+<text x="824.0" y="344.0" class="tl" text-anchor="middle" >Stopped or slow</text>
+<path d="M824,394 L824,442" fill="none" stroke="#4FB3FF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-blue)"/>
+<path d="M824,394 L824,442" fill="none" stroke="#4FB3FF" stroke-width="2.6" class="flow"/>
+<rect x="720.0" y="446.0" width="208.0" height="112.0" rx="20" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="720.5" y="446.5" width="207.0" height="111.0" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<text x="824" y="470" class="eyebrow" text-anchor="middle" fill="#4FB3FF">first move</text>
+<text x="824.0" y="498.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Mac asleep? Samba</text>
+<text x="824.0" y="519.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >restarted? Or a</text>
+<text x="824.0" y="540.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >slow first backup</text>
+<path d="M600,176 C600,214.0 1048,214.0 1048,252" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M600,176 C600,214.0 1048,214.0 1048,252" fill="none" stroke="#7CE0FF" stroke-width="3.2" class="flow"/>
+<rect x="944.0" y="246.0" width="208.0" height="148.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="944.0" y="246.0" width="208.0" height="148.0" rx="22" fill="#7CE0FF" opacity="0.10"/>
+<rect x="944.5" y="246.5" width="207.0" height="147.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="1025.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#g-teal)"/></g>
+<rect x="1025.0" y="266.0" width="46" height="46" rx="12.4" fill="url(#tilehl)"/>
+<rect x="1025.5" y="266.5" width="45" height="45" rx="12.4" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(1036.5,277.5) scale(0.958)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="3.5"/><circle cx="12" cy="10.5" r="3.2"/><path d="M8 17h3"/><circle cx="16.5" cy="17" r=".7" fill="#fff"/></g>
+<text x="1048.0" y="344.0" class="tl" text-anchor="middle" >Disk or boot</text>
+<path d="M1048,394 L1048,442" fill="none" stroke="#7CE0FF" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-teal)"/>
+<path d="M1048,394 L1048,442" fill="none" stroke="#7CE0FF" stroke-width="2.6" class="flow"/>
+<rect x="944.0" y="446.0" width="208.0" height="112.0" rx="20" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="944.5" y="446.5" width="207.0" height="111.0" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<text x="1048" y="470" class="eyebrow" text-anchor="middle" fill="#7CE0FF">first move</text>
+<text x="1048.0" y="498.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >Check lsblk,</text>
+<text x="1048.0" y="519.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >lsusb -t and the</text>
+<text x="1048.0" y="540.0" class="s" text-anchor="middle" style="fill:#F5F5F7" >fstab line</text>
+<path d="M376,558 L376,590" fill="none" stroke="#FF7A70" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round" marker-end="url(#a-red)"/>
+<path d="M376,558 L376,590" fill="none" stroke="#FF7A70" stroke-width="2.6" class="flow"/>
+<rect x="155.0" y="601.0" width="214.0" height="150.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="155.0" y="601.0" width="214.0" height="150.0" rx="22" fill="#5BE584" opacity="0.10"/>
+<rect x="155.5" y="601.5" width="213.0" height="149.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="240.0" y="621.0" width="44" height="44" rx="11.9" fill="url(#g-green)"/></g>
+<rect x="240.0" y="621.0" width="44" height="44" rx="11.9" fill="url(#tilehl)"/>
+<rect x="240.5" y="621.5" width="43" height="43" rx="11.9" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(251.0,632.0) scale(0.917)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></g>
+<text x="262.0" y="697.0" class="tl" text-anchor="middle" >Packets arrive</text>
+<text x="262.0" y="725.0" class="s" text-anchor="middle" >Look on the Pi:</text>
+<text x="262.0" y="748.0" class="s" text-anchor="middle" >password, logs</text>
+<rect x="383.0" y="601.0" width="214.0" height="150.0" rx="22" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="383.0" y="601.0" width="214.0" height="150.0" rx="22" fill="#FF7A70" opacity="0.10"/>
+<rect x="383.5" y="601.5" width="213.0" height="149.0" rx="22" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="468.0" y="621.0" width="44" height="44" rx="11.9" fill="url(#g-red)"/></g>
+<rect x="468.0" y="621.0" width="44" height="44" rx="11.9" fill="url(#tilehl)"/>
+<rect x="468.5" y="621.5" width="43" height="43" rx="11.9" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(479.0,632.0) scale(0.917)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></g>
+<text x="490.0" y="697.0" class="tl" text-anchor="middle" >Nothing at all</text>
+<text x="490.0" y="725.0" class="s" text-anchor="middle" >A security client on</text>
+<text x="490.0" y="748.0" class="s" text-anchor="middle" >the Mac blocks it</text>
+<path d="M376,590 C376,595.5 262,595.5 262,601" fill="none" stroke="#5BE584" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<path d="M376,590 C376,595.5 490,595.5 490,601" fill="none" stroke="#FF7A70" stroke-opacity="0.42" stroke-width="2" stroke-linecap="round"/>
+<rect x="640.0" y="608.0" width="508.0" height="136.0" rx="24" fill="url(#glass)" filter="url(#shadow)"/>
+<rect x="640.0" y="608.0" width="508.0" height="136.0" rx="24" fill="#5BE584" opacity="0.10"/>
+<rect x="640.5" y="608.5" width="507.0" height="135.0" rx="24" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+<g filter="url(#tileshadow)"><rect x="676.0" y="648.0" width="56" height="56" rx="15.1" fill="url(#g-green)"/></g>
+<rect x="676.0" y="648.0" width="56" height="56" rx="15.1" fill="url(#tilehl)"/>
+<rect x="676.5" y="648.5" width="55" height="55" rx="15.1" fill="none" stroke="#fff" stroke-opacity="0.28"/>
+<g transform="translate(690.0,662.0) scale(1.167)" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></g>
+<text x="752.0" y="664.0" class="t" text-anchor="start" >Not sure? Start here</text>
+<text x="752.0" y="696.0" class="m" text-anchor="start" style="fill:#5BE584" >sudo ./scripts/verify.sh</text>
+<text x="752.0" y="722.0" class="s" text-anchor="start" >checks disk, services, Samba and shares</text>
+  <rect x="0.5" y="0.5" width="1199" height="789" rx="34" fill="none" stroke="url(#edge)" stroke-width="1.2"/>
+</svg>
