@@ -3,3 +3,8 @@ config.env
 private/
 .DS_Store
 docs/Screenshot*
+
+# Private instructions for Claude Code, must never be published
+CLAUDE.md
+CLAUDE.local.md
+.claude/

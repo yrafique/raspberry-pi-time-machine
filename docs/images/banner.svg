@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Time Machine on a Raspberry Pi</title>
+  <desc id="d">A Raspberry Pi connected to a USB hard drive, backing up two MacBooks over the network.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#0f3d3a"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="disk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cbd5e1"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <g id="mac">
+      <rect x="0" y="0" width="170" height="108" rx="10" fill="#e2e8f0"/>
+      <rect x="8" y="8" width="154" height="92" rx="5" fill="url(#screen)"/>
+      <circle cx="85" cy="54" r="26" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.95"/>
+      <path d="M85 38 V54 L97 62" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M62 40 L56 30 L68 31 Z" fill="#ffffff"/>
+      <rect x="-14" y="108" width="198" height="11" rx="5.5" fill="#cbd5e1"/>
+    </g>
+  </defs>
+
+  <rect width="1280" height="420" fill="url(#bg)"/>
+  <circle cx="1180" cy="-20" r="220" fill="#14b8a6" opacity="0.08"/>
+  <circle cx="60" cy="440" r="200" fill="#38bdf8" opacity="0.07"/>
+
+  <!-- Title block -->
+  <text x="70" y="150" fill="#5eead4" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3">BACKUP SERVER GUIDE</text>
+  <text x="70" y="218" fill="#ffffff" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="800">Time Machine</text>
+  <text x="70" y="286" fill="#ffffff" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="66" font-weight="800">on a Raspberry Pi</text>
+  <text x="70" y="334" fill="#cbd5e1" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="25">Give a spare USB drive a second life as a backup server.</text>
+
+  <!-- Tags -->
+  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600">
+    <rect x="70" y="360" width="104" height="34" rx="17" fill="#134e4a" stroke="#2dd4bf"/>
+    <text x="122" y="383" fill="#99f6e4" text-anchor="middle">Samba</text>
+    <rect x="186" y="360" width="104" height="34" rx="17" fill="#134e4a" stroke="#2dd4bf"/>
+    <text x="238" y="383" fill="#99f6e4" text-anchor="middle">Avahi</text>
+    <rect x="302" y="360" width="104" height="34" rx="17" fill="#134e4a" stroke="#2dd4bf"/>
+    <text x="354" y="383" fill="#99f6e4" text-anchor="middle">ext4</text>
+    <rect x="418" y="360" width="124" height="34" rx="17" fill="#134e4a" stroke="#2dd4bf"/>
+    <text x="480" y="383" fill="#99f6e4" text-anchor="middle">macOS 26</text>
+  </g>
+
+  <!-- Illustration: two Macs -->
+  <use href="#mac" x="800" y="48"/>
+  <use href="#mac" x="1040" y="48"/>
+
+  <!-- Links Mac -> Pi -->
+  <g fill="none" stroke="#5eead4" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round">
+    <path d="M885 182 C885 225 960 215 985 250"/>
+    <path d="M1125 182 C1125 225 1050 215 1025 250"/>
+  </g>
+  <g fill="#5eead4">
+    <circle cx="885" cy="190" r="5"/>
+    <circle cx="1125" cy="190" r="5"/>
+  </g>
+
+  <!-- Raspberry Pi board -->
+  <g>
+    <rect x="900" y="252" width="210" height="122" rx="12" fill="url(#board)" stroke="#86efac" stroke-width="2"/>
+    <rect x="922" y="274" width="54" height="54" rx="5" fill="#0f172a" opacity="0.85"/>
+    <rect x="990" y="274" width="36" height="22" rx="4" fill="#cbd5e1"/>
+    <rect x="990" y="304" width="36" height="22" rx="4" fill="#cbd5e1"/>
+    <rect x="1050" y="268" width="54" height="30" rx="4" fill="#94a3b8"/>
+    <rect x="1050" y="306" width="54" height="30" rx="4" fill="#3b82f6"/>
+    <circle cx="912" cy="262" r="4" fill="#064e3b"/>
+    <circle cx="1098" cy="362" r="4" fill="#064e3b"/>
+    <circle cx="912" cy="362" r="4" fill="#064e3b"/>
+    <text x="1005" y="360" fill="#ecfdf5" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Raspberry Pi</text>
+  </g>
+
+  <!-- USB link and disk -->
+  <path d="M1104 321 H1150" stroke="#60a5fa" stroke-width="6" stroke-linecap="round"/>
+  <g>
+    <rect x="1150" y="276" width="96" height="92" rx="12" fill="url(#disk)" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="1198" cy="316" r="24" fill="#334155"/>
+    <circle cx="1198" cy="316" r="8" fill="#94a3b8"/>
+    <path d="M1198 316 L1214 302" stroke="#e2e8f0" stroke-width="3" stroke-linecap="round"/>
+    <text x="1198" y="360" fill="#0f172a" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="800" text-anchor="middle">2 TB</text>
+  </g>
+</svg>
